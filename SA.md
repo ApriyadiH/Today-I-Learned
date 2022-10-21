@@ -564,6 +564,8 @@ alert(rect2.height); // alerts 'undefined'
   There are 3 console lines that print “b”.
 
 - Which “b” value would be printed from which line of console.log? Explain why.
+- ![varland 0](https://user-images.githubusercontent.com/116085209/197250806-52ce0e51-b91f-4284-ac21-0e6ffdfa472d.png)
+
   based on my text editor, it was : line 10, line 7, and line 13
   line 10 : printed as 1 because the variable “b” is assigned as 1
   line 7 : printed as 101 because there is an incrementation (b++) in the function hi(), and it’s going to adding 1 to the variable b when the function is called
@@ -571,8 +573,10 @@ alert(rect2.height); // alerts 'undefined'
 
 - What would be `//console.log(a);` in the comment? If there’s an error, explain why and fix the error.
   What would be the “b” value printed on the console?
+![varland 1](https://user-images.githubusercontent.com/116085209/197250783-996b77a2-cd36-43a8-86dc-c4c42e28886e.png)
 
 Error from const a
 For the error part, “a” is a constant with a value is 1, which is defined and declare in the hi() function, so the constant “a” has a limited scope in the hi() function. That’s why the console give an alert ‘a is not defined’.
 
 The way to fix this easily is turn const a into global scope variable by replace it to outside of the hi() function and const a is already global scope variable then you can access it from anywhere.
+![varland 2](https://user-images.githubusercontent.com/116085209/197250726-faffb4b1-94dd-44a4-8d78-800f15aca927.png)
