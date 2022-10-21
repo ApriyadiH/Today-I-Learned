@@ -1,12 +1,12 @@
 Scope is related to declaring a variable. There are 3 type of scope in JavaScript.
 => Block Scope
 Use {} (Braces) any variable declared inside the braces will be available inside the block. Use let, const.
-=========================
+```
 {
   let jml_ayam = 2;
 }
 // jml_ayam can NOT be used here
-=========================
+```
 
 => local Scope 
 function scope is also called as local scope. It is only available inside the function. Use var, let, const.
