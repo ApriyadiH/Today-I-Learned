@@ -1,5 +1,3 @@
-Temporal Dead Zone
-
 Scope is related to declaring a variable. There are 3 type of scope in JavaScript.
 => Block Scope
 Use {} (Braces) any variable declared inside the braces will be available inside the block. Use let, const.
