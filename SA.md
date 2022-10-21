@@ -573,6 +573,7 @@ alert(rect2.height); // alerts 'undefined'
 
 - What would be `//console.log(a);` in the comment? If there’s an error, explain why and fix the error.
   What would be the “b” value printed on the console?
+  
 ![varland 1](https://user-images.githubusercontent.com/116085209/197250783-996b77a2-cd36-43a8-86dc-c4c42e28886e.png)
 
 Error from const a
