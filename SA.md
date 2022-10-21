@@ -266,7 +266,7 @@ Scope is related to declaring a variable. There are 3 type of scope in JavaScrip
 
 Use {} (Braces) any variable declared inside the braces will be available inside the block. Use let, const.
 
-```
+```js
 {
   let jml_ayam = 2;
 }
@@ -277,7 +277,7 @@ Use {} (Braces) any variable declared inside the braces will be available inside
 
 function scope is also called as local scope. It is only available inside the function. Use var, let, const.
 
-```
+```js
 // code here can NOT use ayam
 
 function myFunction() {
@@ -293,7 +293,7 @@ function myFunction() {
 
 variable that applied anywhere. Use var, let, const.
 
-```
+```js
 let ayam = "goreng";
 // code here can use ayam
 
@@ -308,7 +308,7 @@ function myFunction() {
 
 a feature to still run a code line even though some variable are still undefined as long as you define it somewhere.
 
-```
+```js
 console.log(makanan); //undefined
 var makanan = 'ayam';
 ```
@@ -319,7 +319,7 @@ Hoisting feature act differently depend on how you declare your variables.
 For example with var.
 it will always give "undefined" value when you declare it somwhere.
 
-```
+```js
 console.log(ayam); // undefined
 
 var ayam = 'goreng';
@@ -344,7 +344,7 @@ makanan = 'ayam';
 Example with let and const.
 it will give ReferenceError even though you declare it later.
 
-```
+```js
 console.log(makanan); // Uncaught ReferenceError: Cannot access 'makanan' before initialization
 
 # let makanan = 'ayam'; // Same behavior for variables declared with const
@@ -357,7 +357,7 @@ console.log(makanan); // Uncaught ReferenceError: Cannot access 'makanan' before
 a zone where it will return ReferenceError for const and let.
 It starts from the beginning of the variable scope to when the variable is declared
 
-```
+```js
 {
 // Start of bebek's TDZ
 let ayam = 'ayam';
@@ -371,7 +371,7 @@ let bebek = 'bebek'; // End of foo's TDZ
 
 Not only from top to bottom, it also applied on left to right.
 
-```
+```js
 function ayamgoreng(ayam = goreng, goreng = 'goreng') {
 console.log(ayam);
 }
@@ -388,7 +388,7 @@ ayamgoreng(); // Uncaught ReferenceError: Cannot access 'goreng' before initiali
 Function Hoisting
 => like you lift the function declaration to the top.
 
-```
+```js
 theFunction(); // "work" this function is still working because the declaration is hoisted.
 
 function theFunction() {
@@ -398,7 +398,7 @@ console.log('work');
 
 # No hoising, still giving the same result
 
-```
+```js
 function theFunction() {
 console.log('work');
 }
@@ -415,7 +415,7 @@ alert( "Masak air, biar mateng" );
 
 # Hoistings works for function declaration. But not for function expressions.
 
-```
+```js
 with_var(); // Uncaught TypeError: with_var is not a function. With_var is still undefined at this point.
 var with_var = function () {
 console.log("doesn't work");
@@ -469,7 +469,7 @@ For detailed step
 5. Until we end up with "return", then we will remove the function on the top. It will goes back to previous execution context.
 6. This process will repeat until we remove the most bottom execution context which is global execution context.
 
-```
+```js
 const ayam = "ayam" // This is global, will be in global execution context.
 
 function first_function(){ // This function will have its own execution context.
@@ -488,6 +488,7 @@ return d;
 #
 
 Call Stack illustration
+![ilustrasi call stack](https://user-images.githubusercontent.com/116085209/197250465-cc992135-cb32-4443-9ca5-c35e6cb67f2a.png)
 
 - Scope Chain and Information Hiding
 
@@ -498,7 +499,7 @@ Information hiding
 variable declared inside a function will has a limited scope.
 Some review from past.
 
-```
+```js
 // code here can NOT use ayam
 
 function myFunction() {
@@ -513,7 +514,7 @@ variable ayam is hidden inside the myFunction().
 # There is a way to make it available outside the function with "this"
 ```
 
-```
+```js
 function Rectangle() // capitalized name convention
 {
 // private stuff
@@ -563,6 +564,8 @@ alert(rect2.height); // alerts 'undefined'
   There are 3 console lines that print “b”.
 
 - Which “b” value would be printed from which line of console.log? Explain why.
+- ![varland 0](https://user-images.githubusercontent.com/116085209/197250806-52ce0e51-b91f-4284-ac21-0e6ffdfa472d.png)
+
   based on my text editor, it was : line 10, line 7, and line 13
   line 10 : printed as 1 because the variable “b” is assigned as 1
   line 7 : printed as 101 because there is an incrementation (b++) in the function hi(), and it’s going to adding 1 to the variable b when the function is called
@@ -570,8 +573,11 @@ alert(rect2.height); // alerts 'undefined'
 
 - What would be `//console.log(a);` in the comment? If there’s an error, explain why and fix the error.
   What would be the “b” value printed on the console?
+  
+![varland 1](https://user-images.githubusercontent.com/116085209/197250783-996b77a2-cd36-43a8-86dc-c4c42e28886e.png)
 
 Error from const a
 For the error part, “a” is a constant with a value is 1, which is defined and declare in the hi() function, so the constant “a” has a limited scope in the hi() function. That’s why the console give an alert ‘a is not defined’.
 
 The way to fix this easily is turn const a into global scope variable by replace it to outside of the hi() function and const a is already global scope variable then you can access it from anywhere.
+![varland 2](https://user-images.githubusercontent.com/116085209/197250726-faffb4b1-94dd-44a4-8d78-800f15aca927.png)
