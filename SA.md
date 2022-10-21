@@ -266,7 +266,7 @@ Scope is related to declaring a variable. There are 3 type of scope in JavaScrip
 
 Use {} (Braces) any variable declared inside the braces will be available inside the block. Use let, const.
 
-```
+```js
 {
   let jml_ayam = 2;
 }
@@ -277,7 +277,7 @@ Use {} (Braces) any variable declared inside the braces will be available inside
 
 function scope is also called as local scope. It is only available inside the function. Use var, let, const.
 
-```
+```js
 // code here can NOT use ayam
 
 function myFunction() {
@@ -293,7 +293,7 @@ function myFunction() {
 
 variable that applied anywhere. Use var, let, const.
 
-```
+```js
 let ayam = "goreng";
 // code here can use ayam
 
@@ -308,7 +308,7 @@ function myFunction() {
 
 a feature to still run a code line even though some variable are still undefined as long as you define it somewhere.
 
-```
+```js
 console.log(makanan); //undefined
 var makanan = 'ayam';
 ```
@@ -319,7 +319,7 @@ Hoisting feature act differently depend on how you declare your variables.
 For example with var.
 it will always give "undefined" value when you declare it somwhere.
 
-```
+```js
 console.log(ayam); // undefined
 
 var ayam = 'goreng';
@@ -344,7 +344,7 @@ makanan = 'ayam';
 Example with let and const.
 it will give ReferenceError even though you declare it later.
 
-```
+```js
 console.log(makanan); // Uncaught ReferenceError: Cannot access 'makanan' before initialization
 
 # let makanan = 'ayam'; // Same behavior for variables declared with const
@@ -357,7 +357,7 @@ console.log(makanan); // Uncaught ReferenceError: Cannot access 'makanan' before
 a zone where it will return ReferenceError for const and let.
 It starts from the beginning of the variable scope to when the variable is declared
 
-```
+```js
 {
 // Start of bebek's TDZ
 let ayam = 'ayam';
@@ -371,7 +371,7 @@ let bebek = 'bebek'; // End of foo's TDZ
 
 Not only from top to bottom, it also applied on left to right.
 
-```
+```js
 function ayamgoreng(ayam = goreng, goreng = 'goreng') {
 console.log(ayam);
 }
@@ -388,7 +388,7 @@ ayamgoreng(); // Uncaught ReferenceError: Cannot access 'goreng' before initiali
 Function Hoisting
 => like you lift the function declaration to the top.
 
-```
+```js
 theFunction(); // "work" this function is still working because the declaration is hoisted.
 
 function theFunction() {
@@ -398,7 +398,7 @@ console.log('work');
 
 # No hoising, still giving the same result
 
-```
+```js
 function theFunction() {
 console.log('work');
 }
@@ -415,7 +415,7 @@ alert( "Masak air, biar mateng" );
 
 # Hoistings works for function declaration. But not for function expressions.
 
-```
+```js
 with_var(); // Uncaught TypeError: with_var is not a function. With_var is still undefined at this point.
 var with_var = function () {
 console.log("doesn't work");
@@ -469,7 +469,7 @@ For detailed step
 5. Until we end up with "return", then we will remove the function on the top. It will goes back to previous execution context.
 6. This process will repeat until we remove the most bottom execution context which is global execution context.
 
-```
+```js
 const ayam = "ayam" // This is global, will be in global execution context.
 
 function first_function(){ // This function will have its own execution context.
@@ -499,7 +499,7 @@ Information hiding
 variable declared inside a function will has a limited scope.
 Some review from past.
 
-```
+```js
 // code here can NOT use ayam
 
 function myFunction() {
@@ -514,7 +514,7 @@ variable ayam is hidden inside the myFunction().
 # There is a way to make it available outside the function with "this"
 ```
 
-```
+```js
 function Rectangle() // capitalized name convention
 {
 // private stuff
