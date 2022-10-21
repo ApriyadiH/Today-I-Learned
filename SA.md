@@ -488,6 +488,7 @@ return d;
 #
 
 Call Stack illustration
+![ilustrasi call stack](https://user-images.githubusercontent.com/116085209/197250465-cc992135-cb32-4443-9ca5-c35e6cb67f2a.png)
 
 - Scope Chain and Information Hiding
 
