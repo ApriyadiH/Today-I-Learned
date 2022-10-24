@@ -1,5 +1,7 @@
 # Today I learned
 
+![day1](https://user-images.githubusercontent.com/116085209/197585893-03c3d42b-8a25-4048-b9e8-433bc01760c6.png)
+
 ```html
 <!-- 
        /$$                             /$$  
@@ -27,6 +29,8 @@
 
 #
 
+![day2](https://user-images.githubusercontent.com/116085209/197585923-ecc7350b-5dd2-47a5-b426-7950c0cc07d3.png)
+
 ```html
 <!-- 
        /$$                            /$$$$$$ 
@@ -53,6 +57,8 @@ some problem with undefined variable, missing bracket, letter and many more. Our
 team's next goal is updating feature and fixing delete.
 
 #
+
+![day3](https://user-images.githubusercontent.com/116085209/197585945-39739850-7f96-4061-a479-4725f93f290b.png)
 
 ```html
 <!-- 
@@ -84,6 +90,8 @@ screenshot so it is just a screenshot after the presentation is over. "
 
 #
 
+![day 4](https://user-images.githubusercontent.com/116085209/197585993-362fb410-6c70-469c-833e-b800b4eeac8d.png)
+
 ```html
 <!--
        /$$                           /$$   /$$
@@ -113,6 +121,8 @@ in javascript.
 
 #
 
+![day 5](https://user-images.githubusercontent.com/116085209/197586402-fa52cd95-8e2d-4d90-bac2-c1601de62571.png)
+
 ```html
 <!-- 
        /$$                           /$$$$$$$ 
@@ -130,6 +140,10 @@ in javascript.
 ```
 
 We are doing Starting Assignment. Learn about how variables works in JavaScript. We split the works among the teammate. More details on SA.md
+
+#
+
+![day 6](https://user-images.githubusercontent.com/116085209/197586447-ad3d7eea-f567-491a-89aa-b19ce4cd2ac2.png)
 
 ```html
 <!--
@@ -149,6 +163,10 @@ We are doing Starting Assignment. Learn about how variables works in JavaScript.
 
 We got lecture videos. Lot of new lesson about React JS. It is still introductory lessons. Quite difficult for my standard. But i try to keep with it. I also made a notes regarding the lessons. More details on catatan_react.md
 
+#
+
+NO IMAGE
+
 ```html
 <!--
        /$$                           /$$$$$$$$
@@ -166,6 +184,10 @@ We got lecture videos. Lot of new lesson about React JS. It is still introductor
 ```
 
 Still working on catatan-react.md. Not much studying.
+
+#
+
+![ntah day brp ini](https://user-images.githubusercontent.com/116085209/197586078-3f3fce32-c13b-4fa6-a09b-518020774a53.png)
 
 ```html
 <!--
