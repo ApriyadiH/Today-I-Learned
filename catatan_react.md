@@ -133,3 +133,89 @@ const App = () => {
 
 export default App;
 ```
+
+#
+
+# Props, children, parent.
+
+```jsx
+const KomponenE = () => {
+  return (
+
+  )
+}
+
+const KomponenD = () => {
+  return (
+
+  )
+}
+
+const KomponenC = () => {
+  return (
+    <div>
+      <KomponenD/>;
+    </div>
+  )
+}
+
+const KomponenB = () => {
+  return (
+    // Pakai div kalau mau panggil beberapa element
+    <div>
+      <p> Elemen pertama</p>
+      <KomponenC/>;
+    </div>
+  )
+}
+
+const KomponenA = () => {
+  return (
+    // Bisa juga ditulis dalam bentuk seperti ini. Kemudian bisa diisi di dalamnya.
+    <KomponenB>
+      Ini bagian dalam. Ini juga berarti A adalah Parent, B adalah child. Diperhatikan lokasi / di Tag penutup.
+    </KomponenB>;
+  )
+}
+
+const App = () => { // Parent punya akses ke anaknya.
+  return (
+    <KomponenA/>; // Ini berarti App jadi Parent, child nya A
+  )
+}
+
+export default App;
+```
+
+# Props
+
+## Mengirimkan informasi dari Parent ke Child. Tidak bisa dari Child ke Parent dengan props.
+
+```jsx
+const AnaknyaChild = (props) => {
+  console.log("ini di AnaknyaChild");
+  console.log(props.dari_child);
+  return <p>di Anaknya Child {props.dari_child}</p>;
+};
+
+const Child = (props) => {
+  // Tuliskan props di dalam fungsi
+  console.log("ini di Child");
+  console.log(props.yg_dikirim); // Disini nggak perlu kurung {} kaerna masih js.
+  return (
+    // Disini pakai kurung {} karena jsx
+    <div>
+      <p> di Child {props.yg_dikirim} </p>
+      <AnaknyaChild dari_child={props.yg_dikirim} />
+    </div>
+  );
+};
+
+const App = () => {
+  // Parent punya akses ke anaknya.
+  const apa_aja = "informasi yang mau dikirim";
+  return <Child yg_dikirim={apa_aja} />;
+};
+
+export default App;
+```
