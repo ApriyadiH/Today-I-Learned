@@ -207,6 +207,10 @@ Still working on catatan-react.md. Not much studying.
 
 We are working on team assignment. I learned a lot about ref hooks. More details on Week2_team_task.md
 
+#
+
+![day 9](https://user-images.githubusercontent.com/116085209/197837898-473837ae-79f6-4512-9087-85c1ad21ff30.png)
+
 ```html
 <!--
        /$$                            /$$$$$$ 
