@@ -206,3 +206,21 @@ Still working on catatan-react.md. Not much studying.
 ```
 
 We are working on team assignment. I learned a lot about ref hooks. More details on Week2_team_task.md
+
+```html
+<!--
+       /$$                            /$$$$$$ 
+      | $$                           /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$      |  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$       \____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/ 
+                     /$$  | $$                
+                    |  $$$$$$/                
+                     \______/            
+-->
+```
+
+Working on personal task, Already done with UI. Rest are working with the logic.

@@ -62,7 +62,8 @@ export default App; // Hasil keluaran App akan di kirim ke index.html
 
 ```jsx
 import logo from "./logo.svg"; // Import gambar
-import "./App.css"; // Import file css
+import File_css from "./App.css"; // Import file css
+Import Layout from "./components/layout";
 ```
 
 # Ketentuan membuat komponen.
@@ -136,53 +137,70 @@ export default App;
 
 #
 
-# Props, children, parent.
+# Props, child, children, parent.
 
 ```jsx
-const KomponenE = () => {
+// Contoh lupa props
+const GagalChildDua = () => {
+  return <div>{props.children}</div>;
+};
+
+const GagalParentDua = () => {
   return (
+    <GagalChildDua>
+      <p>
+        ini nggak ter-render karena di komponen GagalChildDua lupa pakai props
+      </p>
+    </GagalChildDua>
+  );
+};
+////////////////////////////////////////////////////////////
+// Contoh lupa props.children
+const GagalChildSatu = (props) => {
+  return;
+  <div>{/* Seharusnya ada props.children */}</div>;
+};
 
-  )
-}
-
-const KomponenD = () => {
+const GagalParentSatu = () => {
   return (
-
-  )
-}
-
-const KomponenC = () => {
+    <GagalChildSatu>
+      <p>
+        Ini nggak ter-render karena di komponen GagalChildSatu lupa memanggil
+        props.children
+      </p>
+    </GagalChildSatu>
+  );
+};
+////////////////////////////////////////////////////////////
+// Contoh berhasil
+const KomponenB = (props) => {
+  // JANGAN LUPA PROPS
   return (
-    <div>
-      <KomponenD/>;
-    </div>
-  )
-}
-
-const KomponenB = () => {
-  return (
-    // Pakai div kalau mau panggil beberapa element
-    <div>
-      <p> Elemen pertama</p>
-      <KomponenC/>;
-    </div>
-  )
-}
+    //Panggil anaknya
+    <div>{props.children}</div>
+  );
+};
 
 const KomponenA = () => {
   return (
     // Bisa juga ditulis dalam bentuk seperti ini. Kemudian bisa diisi di dalamnya.
     <KomponenB>
-      Ini bagian dalam. Ini juga berarti A adalah Parent, B adalah child. Diperhatikan lokasi / di Tag penutup.
-    </KomponenB>;
-  )
-}
+      <p>
+        Ini bagian dalam. Ini juga berarti A adalah Parent, B adalah child.
+        Diperhatikan lokasi / di Tag penutup.
+      </p>
+      <p>Komponen p ini juga merupakan childrennya B</p>
+      <p>Tapi baru bisa ter-render kalau dipanggil di B dan ada props</p>
+    </KomponenB>
+  );
+};
 
-const App = () => { // Parent punya akses ke anaknya.
+const App = () => {
+  // Parent punya akses ke anaknya.
   return (
-    <KomponenA/>; // Ini berarti App jadi Parent, child nya A
-  )
-}
+    <KomponenA /> // Ini berarti App jadi Parent, child nya A
+  );
+};
 
 export default App;
 ```
@@ -204,6 +222,7 @@ const Child = (props) => {
   console.log(props.yg_dikirim); // Disini nggak perlu kurung {} kaerna masih js.
   return (
     // Disini pakai kurung {} karena jsx
+    // Bisa pakai div untuk memanggil beberapa elemen
     <div>
       <p> di Child {props.yg_dikirim} </p>
       <AnaknyaChild dari_child={props.yg_dikirim} />
@@ -218,4 +237,183 @@ const App = () => {
 };
 
 export default App;
+```
+
+#
+
+# Props tapi dengan destructure
+
+## bisa nambahin default value juga
+
+```jsx
+// Bisa mentransfer beberapa variabel dengan {}
+const Child = ({
+  ini_string,
+  ini_integer,
+  ini_default = "goreng",
+  mengalahkan_default = "default",
+  caralain,
+  mengalahkan_caralain,
+}) => {
+  return (
+    <div>
+      <p>contoh String = {ini_string}</p>
+      <p>contoh integer = {ini_integer}</p>
+      <p>contoh default Value, tapi kosong = {ini_default}</p>
+      <p>
+        contoh default Value, tapi ada nilainya dibawah = {mengalahkan_default}
+      </p>
+      <p>contoh dengan defaultProps diluar = {caralain} </p>
+      <p>
+        contoh dengan defaultProps diluar tapi dikalahkan={" "}
+        {mengalahkan_caralain}{" "}
+      </p>
+    </div>
+  );
+};
+
+Child.defaultProps = {
+  caralain: "default cara lain",
+  mengalahkan_caralain: "default cara lain",
+};
+
+const App = () => {
+  return (
+    <Child
+      ini_string="ayam"
+      ini_integer={2}
+      mengalahkan_default="nggak pakai default"
+      mengalahkan_caralain="nggak pakai default"
+    />
+  );
+};
+
+export default App;
+```
+
+#
+
+# State
+
+## Nilai di dalam komponen yang berubah.
+
+Bentuk sederhana State
+
+```jsx
+import { useState } from "react"; // Jgn lupa import use state
+
+// Ada 2 variabel di array. yg pertama variabelnya, yg kedua fungsi untuk mengubah nilainya.
+const [contoh_state, setContoh_state] = useState(
+  "Nilai awal dari contoh_state"
+);
+```
+
+Mengubah dengan tombol atau onClick
+
+```jsx
+import { useState } from "react"; // Jgn lupa import use state
+
+const KomponenLain = (props) => {
+  //Bisa pakai Handler
+  const efek_tombol = () => {
+    props.kirim_kemampuan();
+  };
+  return (
+    <div>
+      <p>kalau state berubah, props dikirim ulang juga = {props.yg_dikirim}</p>
+      <button onClick={() => props.kirim_kemampuan("Domba")}>Jadi Domba</button>
+      <button onClick={efek_tombol}>Kosong</button>
+    </div>
+  );
+};
+
+const App = () => {
+  //Nilai awal Hewan adalah Ayam
+  let [hewan, setHewan] = useState("Ayam");
+  return (
+    <div>
+      <p>hewan = {hewan}</p>
+      {/* Jgn lupa camelCase untuk properti dari DOM di jsx */}
+      {/* Disini tombol akan menjalankan fungsi tanpa nama yang menjalankan efek "setHewan" */}
+      <button onClick={() => setHewan("bebek")}>Jadi Bebek</button>
+
+      {/* Tombol ini mengubah variabel hewan menjadi cicak, tetapi tidak mengubah state. Jadi React tidak melakukan rendering ulang. */}
+
+      {/* Dapat dilihat di console, akan muncul cicak tetapi teks di <p> tidak berubah */}
+      <button
+        onClick={() => {
+          hewan = "cicak";
+          console.log(hewan);
+        }}
+      >
+        Jadi Cicak
+      </button>
+      <KomponenLain yg_dikirim={hewan} kirim_kemampuan={setHewan} />
+    </div>
+  );
+};
+
+export default App;
+```
+
+Mengubah dengan onChange
+
+```jsx
+import React, { useState } from "react"; // Jgn lupa import use state
+
+// Jadi ceritanya react itu reactive. Kalau di input box bakal bermasalah.
+// Kalau ngambil angka, react akan me-render ulang.
+// Jadi solusinya adalah mengupdate data yang diambil setiap saat.
+// Kemudian data tersebut ditampilin ulang.
+
+const App = () => {
+  // Variabel untuk menampung nilai dari inputan pengguna.
+  const [isi, setIsi] = useState("");
+
+  // Ini handler onChange, setiap ada perubahan di dalam input box, akan diambil datanya, diisi kembali ke input box
+  const onChangeHandler = (event) => {
+    const isi_handler = event.target.value;
+    setIsi(isi_handler);
+  };
+
+  return (
+    <div>
+      <p>isi dari input text adalah {isi}</p>
+      {/* nilai dari input box akan dijadikan variabel isi */}
+      <input value={isi} onChange={onChangeHandler} />
+    </div>
+  );
+};
+
+export default App;
+```
+
+#
+
+# Spread Operator
+
+## Mengambil informasi dan kemudian ditambahkan. berguna untuk menyalin immutable object
+
+#
+
+# Map
+
+## Semacam menggunakan data dari array kemudian membuat baris kode yang sama dengan sedikit perbedaan.
+
+```jsx
+const App = () => {
+  const hewan = ['ayam','bebek','cicak','domba'];
+
+  return (
+    <div key = {}>
+      {hewan_banyak.map((hewan) => (
+        return (
+          <div>{hewan}</div>
+        )
+      ))}
+  )
+}
+
+export default App;
+
 ```
