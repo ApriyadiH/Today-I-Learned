@@ -228,3 +228,25 @@ We are working on team assignment. I learned a lot about ref hooks. More details
 ```
 
 Working on personal task, Already done with UI. Rest are working with the logic.
+
+#
+
+![day 10](https://user-images.githubusercontent.com/116085209/198088855-2a32f81f-b554-4575-8631-c6bc547228f1.png)
+
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  | $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$  | $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$        | $$  | $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$        | $$  | $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/  
+-->
+```
+
+Today i learned about map syntax, filter and its different. How react re-rendering works and changing value without changing state. More will be in catatan_react
