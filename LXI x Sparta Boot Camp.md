@@ -250,3 +250,30 @@ Working on personal task, Already done with UI. Rest are working with the logic.
 ```
 
 Today i learned about map syntax, filter and its different. How react re-rendering works and changing value without changing state. More will be in catatan_react
+
+#
+
+![day 11](https://user-images.githubusercontent.com/116085209/198353315-3785d65e-51db-4036-bf6f-f43a0ae41d23.png)
+
+```html
+<!--
+       /$$                             /$$     /$$  
+      | $$                           /$$$$   /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  |_  $$  
+ /$$__  $$ |____  $$| $$  | $$        | $$    | $$  
+| $$  | $$  /$$$$$$$| $$  | $$        | $$    | $$  
+| $$  | $$ /$$__  $$| $$  | $$        | $$    | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$ /$$$$$$
+ \_______/ \_______/ \____  $$      |______/|______/
+                     /$$  | $$                      
+                    |  $$$$$$/                      
+                     \______/   
+-->
+```
+Today we are adding some small features. adding alert and confirm buttton. Alert if one of the input field is empty and confirm if the delete button is pressed. Confirm somehow works normally. But alert will reload the page. Later we can add (event).preventDefault. Not sure how it works but somehow it can stop reloading page after pressing a button.
+
+I'm not doing well today.
+
+Everything went well so far, until i must deploy the app to heroku. I never done it before. So changing package.json, npm and yarn has conflicting lock file. But the most frustating part is when i try to access wrong link. The link with .git at the end from heroku isn't the application. The actual link is on the top. I thought i have an error and tried to retry the whole step from the eginning and wasting more time. For now i already knew what to do, to deploy the code with heroku and react.
+
+Image above, me after finished with mini task. I'm sure i tried my best, but in the end it doesn't end that well.
