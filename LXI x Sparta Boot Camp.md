@@ -207,6 +207,10 @@ Still working on catatan-react.md. Not much studying.
 
 We are working on team assignment. I learned a lot about ref hooks. More details on Week2_team_task.md
 
+#
+
+![day 9](https://user-images.githubusercontent.com/116085209/197837898-473837ae-79f6-4512-9087-85c1ad21ff30.png)
+
 ```html
 <!--
        /$$                            /$$$$$$ 
@@ -224,3 +228,87 @@ We are working on team assignment. I learned a lot about ref hooks. More details
 ```
 
 Working on personal task, Already done with UI. Rest are working with the logic.
+
+#
+
+![day 10](https://user-images.githubusercontent.com/116085209/198088855-2a32f81f-b554-4575-8631-c6bc547228f1.png)
+
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  | $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$  | $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$        | $$  | $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$        | $$  | $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/  
+-->
+```
+
+Today i learned about map syntax, filter and its different. How react re-rendering works and changing value without changing state. More will be in catatan_react
+
+#
+
+![day 11](https://user-images.githubusercontent.com/116085209/198353315-3785d65e-51db-4036-bf6f-f43a0ae41d23.png)
+
+```html
+<!--
+       /$$                             /$$     /$$  
+      | $$                           /$$$$   /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  |_  $$  
+ /$$__  $$ |____  $$| $$  | $$        | $$    | $$  
+| $$  | $$  /$$$$$$$| $$  | $$        | $$    | $$  
+| $$  | $$ /$$__  $$| $$  | $$        | $$    | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$ /$$$$$$
+ \_______/ \_______/ \____  $$      |______/|______/
+                     /$$  | $$                      
+                    |  $$$$$$/                      
+                     \______/   
+-->
+```
+Today we are adding some small features. adding alert and confirm buttton. Alert if one of the input field is empty and confirm if the delete button is pressed. Confirm somehow works normally. But alert will reload the page. Later we can add (event).preventDefault. Not sure how it works but somehow it can stop reloading page after pressing a button.
+
+I'm not doing well today.
+
+Everything went well so far, until i must deploy the app to heroku. I never done it before. So changing package.json, npm and yarn has conflicting lock file. But the most frustating part is when i try to access wrong link. The link with .git at the end from heroku isn't the application. The actual link is on the top. I thought i have an error and tried to retry the whole step from the eginning and wasting more time. For now i already knew what to do, to deploy the code with heroku and react.
+
+Image above, me after finished with mini task. I'm sure i tried my best, but in the end it doesn't end that well.
+
+#
+
+![week3 team](https://user-images.githubusercontent.com/116085209/198687644-112e9359-f431-4c63-9280-46a8ba383e46.png)
+
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  |__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$    /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        | $$   /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$        | $$  | $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$| $$$$$$$$
+ \_______/ \_______/ \____  $$      |______/|________/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/               
+-->
+```
+State is a value inside of a component that you can change with several event or action. Like when the user click a button, when the user input a letter to the input field.
+
+Props is whatever the value you transfer from Parent to a Child.
+
+JavaScript will re-render the interface whenever the State change or when props is transferred.
+
+Today we are learning about basic javascript. Data type, mathematical operator, logic operator, looping. Basic stuff and more details on catatan_js.js
+
+
+
+
+
+
+
+
