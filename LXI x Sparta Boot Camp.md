@@ -277,3 +277,38 @@ I'm not doing well today.
 Everything went well so far, until i must deploy the app to heroku. I never done it before. So changing package.json, npm and yarn has conflicting lock file. But the most frustating part is when i try to access wrong link. The link with .git at the end from heroku isn't the application. The actual link is on the top. I thought i have an error and tried to retry the whole step from the eginning and wasting more time. For now i already knew what to do, to deploy the code with heroku and react.
 
 Image above, me after finished with mini task. I'm sure i tried my best, but in the end it doesn't end that well.
+
+#
+
+![week3 team](https://user-images.githubusercontent.com/116085209/198687644-112e9359-f431-4c63-9280-46a8ba383e46.png)
+
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  |__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$    /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        | $$   /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$        | $$  | $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$| $$$$$$$$
+ \_______/ \_______/ \____  $$      |______/|________/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/               
+-->
+```
+State is a value inside of a component that you can change with several event or action. Like when the user click a button, when the user input a letter to the input field.
+
+Props is whatever the value you transfer from Parent to a Child.
+
+JavaScript will re-render the interface whenever the State change or when props is transferred.
+
+Today we are learning about basic javascript. Data type, mathematical operator, logic operator, looping. Basic stuff and more details on catatan_js.js
+
+
+
+
+
+
+
+
