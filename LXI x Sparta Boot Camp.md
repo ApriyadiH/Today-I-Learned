@@ -305,10 +305,67 @@ JavaScript will re-render the interface whenever the State change or when props 
 
 Today we are learning about basic javascript. Data type, mathematical operator, logic operator, looping. Basic stuff and more details on catatan_js.js
 
+#
 
+No image since we are just learning from video lecture.
 
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  |__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$     /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        | $$    |___  $$
+| $$  | $$ /$$__  $$| $$  | $$        | $$   /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/    
+-->
+```
 
+Learning more stuff about react. Related to new way to add style, useEffect, some review on useState. Also learn more stuff about redux. I will add more stuff in catatan-react.md
 
+#
 
+```html
+<!--
+       /$$                             /$$ /$$   /$$
+      | $$                           /$$$$| $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$| $$  | $$
+ /$$__  $$ |____  $$| $$  | $$        | $$| $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$        | $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$        | $$      | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$    | $$
+ \_______/ \_______/ \____  $$      |______/    |__/
+                     /$$  | $$                      
+                    |  $$$$$$/                      
+                     \______/   
+-->
+```
+
+Sunday stil learning and studying the video lecture. For short summary, redux will allow the programmer keep some state in a separated file where other component can access it without transferring it from Parent to Children.
+
+#
+
+![week3-team](https://user-images.githubusercontent.com/116085209/199053106-4c8424dd-9291-40f7-896e-235b77af2c72.png)
+
+```html
+<!--
+       /$$                             /$$   /$$$$$$$ 
+      | $$                           /$$$$  | $$____/ 
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  | $$      
+ /$$__  $$ |____  $$| $$  | $$        | $$  | $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$        | $$  |_____  $$
+| $$  | $$ /$$__  $$| $$  | $$        | $$   /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/     
+-->
+```
+We are working on team task, learning the theory part. How redux works, how to store the data after refresh, optional chaining, and button type and its effect for redux. Button have several type and it may refresh the page and re-initialize redux data. At some point we need to refresh, redux can store its data with sessions or local storage and many other way. 
 
 
