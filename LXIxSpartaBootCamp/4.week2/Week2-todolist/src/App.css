@@ -1,0 +1,72 @@
+
+
+
+
+.list-container{
+  padding: 0 24px;
+}
+
+.list-title{}
+
+.h2 > .list-title{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.todo-container {
+  display: flex;
+  gap: 12px;
+  border: 4px solid teal;
+  border-radius: 12px;
+  padding: 12px 24px 24px;
+  width: 270px;
+}
+
+.todo-title{
+  width: 100px;
+  height: 100px;
+  border: 1px seagreen solid;
+  padding : 5px;
+  border-radius: 8px;
+
+  h2
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.button-set{
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.todo-delete-button{
+  background-color: #fff;
+  border: 2px solid red;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 50%;
+}
+
+.todo-complete-button{
+  background-color: #fff;
+  border: 2px solid green;
+}

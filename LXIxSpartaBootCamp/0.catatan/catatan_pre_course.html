@@ -1,0 +1,769 @@
+<!--
+ /$$   /$$ /$$$$$$$$ /$$      /$$ /$$      
+| $$  | $$|__  $$__/| $$$    /$$$| $$      
+| $$  | $$   | $$   | $$$$  /$$$$| $$      
+| $$$$$$$$   | $$   | $$ $$/$$ $$| $$      
+| $$__  $$   | $$   | $$  $$$| $$| $$      
+| $$  | $$   | $$   | $$\  $ | $$| $$      
+| $$  | $$   | $$   | $$ \/  | $$| $$$$$$$$
+|__/  |__/   |__/   |__/     |__/|________/                                                  
+-->
+HTML untuk pembuatan struktur, pemosisian elemen.
+
+<!--UMUM-->
+<div>Kontainer dokumen</div>
+Untuk ngasih garis horizontal.
+<hr />
+<span style="color: red"> Ngasih jarak aja</span>
+<a href="http://google.com/"> hyperlink, edit linknya</a>
+<img src="https://www.google.com/images/.png" />Untuk gambar.
+
+<!--TEKS-->
+<p>Paragraf, untuk teks kecil</p>
+<h1>Teks besar, bold</h1>
+<h2>Teks lumayan besar, bold</h2>
+<h3>Teks kecil, bisa sampai h6, bold</h3>
+
+<!--INPUT atau FORM-->
+<input type="text" />Untuk kotak input
+<button>Untuk tombol</button>
+<textarea>Kotak input tapi lebih besar.</textarea>
+
+<!--LIST-->
+<!--unodrered list-->
+<ul>
+  Unordered list, nggak pakai nomor.
+  <li>Daftar pertama</li>
+  <li>Daftar kedua</li>
+</ul>
+<!--odrered list-->
+<ol>
+  Ordered list, pakai nomor.
+  <li>ada nomornya</li>
+  <li>ada nomornya</li>
+</ol>
+
+<!--TABLE-->
+<table>
+  <thead>
+    <!--untuk bagian atas table-->
+    <td></td>
+    <td></td>
+    <td></td>
+  </thead>
+  <tbody>
+    <!--disini isinya, bisa diappend kesini-->
+    <tr>
+      <!--baris baru, kebawah-->
+      <td></td>
+      <!--data per kolom, kesamping-->
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
+  /$$$$$$   /$$$$$$   /$$$$$$ 
+ /$$__  $$ /$$__  $$ /$$__  $$
+| $$  \__/| $$  \__/| $$  \__/
+| $$      |  $$$$$$ |  $$$$$$ 
+| $$       \____  $$ \____  $$
+| $$    $$ /$$  \ $$ /$$  \ $$
+|  $$$$$$/|  $$$$$$/|  $$$$$$/
+\______/  \______/  \______/ 
+-->
+CSS untuk memberikan style ke suatu elemen.
+
+<!--CSS bisa dipindahkan ke file terpisah untuk membaut kode lebih rapi-->
+<!--Tinggal tambahkan baris kode ini di head dan href menuju file yg sesuai-->
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style>
+  .namaKelas {
+    /*umum*/
+    display: none; /*menghilangkan elemen*/
+
+    /*Berhubungan dengan bg*/
+    background-color: pink;
+    background-image: url("link ke gambar");
+    background-size: cover;
+    background-position: center;
+    /*bikin gambar jadi gelap, nambain layer dgn transparansi 50%*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://movie-phinf.pstatic.net/2.jpg");
+
+    /*berhubungan dengan ukuran*/
+    width: 12px; /*bisa dlm persen*/
+    height: 12px;
+    max-width: 1200px;
+
+    /*berhubungan dengan font*/
+    font-size: large;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    color: aliceblue;
+    text-align: center;
+
+    /*berhubungan dengan layout*/
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+
+    /*berhubungan dengan border*/
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px 0px gray;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<!--Mengaplikasikan font ke seluruh halaman, kalau sebagian teks beda lagi-->
+<!--di head, ini dicari di google font, ada sumber lain-->
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+  rel="stylesheet"
+/>
+<!--di dalam style, ada di google fonts juga-->
+<style>
+  * {
+    /*Sepertinya mengganti font sans-serif jadi Yusei Magic*/
+    font-family: "Yusei Magic", sans-serif;
+  }
+</style>
+
+<!--
+ /$$$$$$$                        /$$                /$$                                 
+| $$__  $$                      | $$               | $$                                 
+| $$  \ $$  /$$$$$$   /$$$$$$  /$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$  /$$$$$$   /$$$$$$ 
+| $$$$$$$  /$$__  $$ /$$__  $$|_  $$_/  /$$_____/|_  $$_/   /$$__  $$|____  $$ /$$__  $$
+| $$__  $$| $$  \ $$| $$  \ $$  | $$   |  $$$$$$   | $$    | $$  \__/ /$$$$$$$| $$  \ $$
+| $$  \ $$| $$  | $$| $$  | $$  | $$ /$$\____  $$  | $$ /$$| $$      /$$__  $$| $$  | $$
+| $$$$$$$/|  $$$$$$/|  $$$$$$/  |  $$$$//$$$$$$$/  |  $$$$/| $$     |  $$$$$$$| $$$$$$$/
+|_______/  \______/  \______/    \___/ |_______/    \___/  |__/      \_______/| $$____/ 
+                                                                              | $$      
+                                                                              | $$      
+                                                                              |__/     
+-->
+Framework CSS. Bisa pakai yang sudah ada, bisa di ubah2 dengan SASS juga.
+
+<!--
+Link download, atau mengaplikasikan bootstrap.
+Ada beberapa cara seperti pakai NPM, download langsung, bisa juga buat cara lain.
+-->
+
+<!--Cara Import dari situs Bootstrapnya sendiri-->
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<!--Cara import dari w3school-->
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!--
+    /$$$$$                                                             /$$             /$$    
+   |__  $$                                                            |__/            | $$    
+      | $$  /$$$$$$  /$$    /$$ /$$$$$$   /$$$$$$$  /$$$$$$$  /$$$$$$  /$$  /$$$$$$  /$$$$$$  
+      | $$ |____  $$|  $$  /$$/|____  $$ /$$_____/ /$$_____/ /$$__  $$| $$ /$$__  $$|_  $$_/  
+ /$$  | $$  /$$$$$$$ \  $$/$$/  /$$$$$$$|  $$$$$$ | $$      | $$  \__/| $$| $$  \ $$  | $$    
+| $$  | $$ /$$__  $$  \  $$$/  /$$__  $$ \____  $$| $$      | $$      | $$| $$  | $$  | $$ /$$
+|  $$$$$$/|  $$$$$$$   \  $/  |  $$$$$$$ /$$$$$$$/|  $$$$$$$| $$      | $$| $$$$$$$/  |  $$$$/
+ \______/  \_______/    \_/    \_______/|_______/  \_______/|__/      |__/| $$____/    \___/  
+                                                                          | $$                
+                                                                          | $$                
+                                                                          |__/   
+-->
+JavaScript untuk membuat elemen yang interaktif.
+
+<script>
+  function namafungsi() {
+    alert("Hello!"); //Memunculkan popup yang berisi tulisan.
+    console.log("Hello Sparta!"); //Menampilkan teks di konsol
+
+    //Membuat variabel
+    let a = 1;
+    let b = 2;
+    a + b; // 3
+    a / b; // 0.5
+    b % a; // 0 ini mencari sisa, atau mod.
+
+    //Kalau variabelnya string, bakal di concatenate
+    let first = "Ayam";
+    let last = "Goreng";
+    first + last; // 'AyamGoreng'
+    first + " " + last; // 'Ayam Goreng'
+    first + a; // Bob1 -> Kalau ada string, yg nomor diubah jadi string juga.
+
+    //Konvensi aturan yang umum disepakati untuk nama variabel.
+    //gk boleh ada spasi dan karakter khusus.
+    //yg perlu diatur variabelnya bukan isinya ya.
+    let first_name = "Ayam_Goreng"; // snake case
+    let firstName = "ayamGoreng"; // camel case.
+
+    //List
+    //selalu dimulai dari 0.
+    let a_list = []; // Membuat variabel jenis list
+    let b_list = ["ayam", 2, "goreng", 3]; // Bisa langsung diisi.
+
+    //Memanggil data yang ada di dalam list.
+    b_list[1]; // 2
+    b_list[2]; // 'goreng'
+
+    b_list.push("tepung"); //Menambahkan elemen di list
+    b_list; // ["ayam", 2, "goreng", 3, "tepung"]
+
+    b_list.length; // 5, mencari jumlah data di dalam list.
+
+    //Object
+    //Mirip list, tapi pakai kurung kurawal, ada key dan nilai dari key.
+    let a_obj = {}; // declaring object
+
+    let b_obj = { name: "Bob", age: 21 }; // could also declare it like this
+    b_obj["name"]; // 'Bob'
+    b_obj["age"]; // 21
+
+    b_obj["height"] = 180; // menambahkan data ke dlm objek
+    b_obj; // {name: "Bob", age: 21, height: 180}
+
+    //Gabungan list dan object
+    //Jadi list dan di dalamnya ada beberapa objek
+    names = [
+      { name: "bob", age: 20 },
+      { name: "carry", age: 38 },
+    ];
+
+    names[0]["name"]; // 'bob'
+    names[1]["name"]; // 'carry'
+
+    new_name = { name: "john", age: 7 };
+    names.push(new_name);
+
+    names; // [{'name':'bob','age':20},{'name':'carry','age':38},{'name':'john','age':7}]
+    names[2]["name"]; // 'john'
+
+    //Bikin jadi capslock
+    let myname = "pecanduayamgoreng";
+    myname.toUpperCase(); // PECANDUAYAMGORENG
+
+    //Memisahkan string. Hasilnya dalam bentuk list
+    let myemail = "ayamgoreng@gmail.com";
+    let result = myemail.split("@"); // ['ayamgoreng','gmail.com']
+    result[0]; // ayamgoreng
+    result[1]; // gmail.com
+
+    let result2 = result[1].split("."); // ['gmail','com']
+    result2[0]; // gmail
+    result2[1]; // com
+
+    myemail.split("@")[1].split(".")[0]; // gmail langsung 1 baris kode aja.
+
+    //Kalau mau gabungin list jadi 1 string.
+    c_list = ["ayam", "goreng", "tepung"];
+    let result3 = names.join(">"); // 'ayam>goreng>tepung'
+
+    //Pengulangan
+    "ayam".repeat(31); //Mengulang teks ayam sebanyak 31x
+
+    //Reload halaman. Digunakan ketika baru saja mengupdate suatu data.
+    window.location.reload();
+  }
+</script>
+
+<!--button bisa menjalankan fungsi JS-->
+<button onclick="namafungsi()" type="submit" class="btn btn-primary">
+  Teks di tombol
+</button>
+
+<!--Cara menuliskan fungsi-->
+<script>
+  function FunctionName(variables) {
+    // perintah akan dijalankan berurutan
+  }
+  // Memanggil fungsi
+  FunctionName(variables);
+
+  //Cara menuliskan yang lain
+  function sum(num1, num2) {
+    return num1 + num2;
+  }
+  //Memanggil fungsi
+  sum(3, 5); // 8
+  sum(4, -1); // 3
+
+  function penggunaan_if() {
+    if (ayam > 3) {
+      //kondisi if
+      alert("Kasih ayam ke teman"); //hasil jika mememnuhi kondisi
+    } else if (ayam > 0 && jenis === "Goreng tepung") {
+      //kondisi kedua, pakai logika AND
+      alert("Makan ayam");
+    } else if (jenis === "Gulai" || jenis === "Bakar") {
+      //Logika AND
+      alert("Gak doyan, kasih ke teman");
+    } else {
+      alert("Beli ayam goreng tepung");
+    }
+  }
+
+  function penggunaan_for() {
+    for (let i = 0; i < 100; i++) {
+      //isinya kondisi awal, kondisi akhir, increment
+      console.log(i); //yang dijalankan selama belum memenuhi kondisi akhir
+    }
+  }
+</script>
+
+<!--
+            /$$$$$$                                         
+           /$$__  $$                                        
+       /$$| $$  \ $$ /$$   /$$  /$$$$$$   /$$$$$$  /$$   /$$
+      |__/| $$  | $$| $$  | $$ /$$__  $$ /$$__  $$| $$  | $$
+       /$$| $$  | $$| $$  | $$| $$$$$$$$| $$  \__/| $$  | $$
+      | $$| $$/$$ $$| $$  | $$| $$_____/| $$      | $$  | $$
+      | $$|  $$$$$$/|  $$$$$$/|  $$$$$$$| $$      |  $$$$$$$
+      | $$ \____ $$$ \______/  \_______/|__/       \____  $$
+ /$$  | $$      \__/                               /$$  | $$
+|  $$$$$$/                                        |  $$$$$$/
+ \______/                                          \______/ 
+-->
+jQuery itu library atau kumpulan fungsi dan modul dalam bahasa JavaScript.
+Kelebihannya bisa kompatibel di berbagai browser.
+
+<!--Cara import dari situs jQuery-->
+Sebenarnya ada banyak versi jQuery, beberapa versi (yg uncompressed, minified,
+dll), ada banyak sumber juga. Jadi saya cuma tulisin salah satu aja yg versi
+uncompressed.
+<head>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<!--Cara import dari w3school-->
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<!--Jangan lupa kasih id = "" atau name ="", biar gampang nyari elemennya.-->
+<div class="form-floating mb-3">
+  <input
+    id="element"
+    type="email"
+    class="form-control"
+    placeholder="name@example.com"
+  />
+  <!--ada id di sini-->
+</div>
+
+<!--Fungsi, atau apalah namanya-->
+<script>
+  //Umum
+  $("#element").val(); //mengambil nilai dari elemen
+  $("#element").val("sesuatu"); //mengubah nilai dari elemen menjadi sesuatu
+  $("#tulang_ayam").hide(); //menghilangkan/menyembunyikan elemen tulang ayam
+  $("#piring").show(); //menampilkan elemen piring
+  $("#mengubah_attribut").attr("nama_attribut", nilai_attribut_baru); //Misalnya elemen, mau diubah attributnya. <img id="mengubah_attribut" src="yg lama"/>
+  $("#mengubah_teks").text(pesan_baru); //misalnya <p id="mengubah_teks">Pesan_lama</p> Yang diubah itu pesan lamanya
+  $(document).ready(function () {
+    //ini documentnya wajib dlm bentuk begitu, nggak pakai # atau kutip. Menjalankan fungsi jika halaman sudah siap.
+    //isi apapun disini
+  });
+
+  //Menambahkan elemen baru kedalam kontainer dan mengosongkan
+  $("#Piring").append(ayam); //menambahkan elemen dgn id Ayam ke elemen Piring
+  $("#Piring").empty();
+  //bisa menambahkan baris kode panjang untuk variabel ayam
+  let ayam = "<button>I am a new button!</button>";
+  //Kalau baris kodenya panjang, bisa pakai backtick ` lokasinya disebelah angka
+  let kartu_ayam = `
+  <div class="col">
+    <div class="card h-100">
+      <img src="gambar_ayam.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${teks}</h5>
+        <p class="card-text">Ayam Goreng Tepung</p>
+        <p>⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>`;
+  //Bisa menambahkan variabel ke dalam baris kode "kartu_ayam" seperti contoh diatas dengan
+  let teks = "ayam goreng tepung";
+  //tambahkan ini
+  kartu_ayam = `<p>makan ${teks} </p>`;
+</script>
+
+<!--
+    /$$$$$  /$$$$$$   /$$$$$$  /$$   /$$
+   |__  $$ /$$__  $$ /$$__  $$| $$$ | $$
+      | $$| $$  \__/| $$  \ $$| $$$$| $$
+      | $$|  $$$$$$ | $$  | $$| $$ $$ $$
+ /$$  | $$ \____  $$| $$  | $$| $$  $$$$
+| $$  | $$ /$$  \ $$| $$  | $$| $$\  $$$
+|  $$$$$$/|  $$$$$$/|  $$$$$$/| $$ \  $$
+ \______/  \______/  \______/ |__/  \__/
+-->
+JSON umumnya digunakan untuk bertukar data antar webpage dan server dengan objek
+JavaScript.
+
+<!--
+Terdiri dari 2 komponen
+-> array/list (diisi beberapa objek), pakai [ ], bisa dibilang cuma ada value
+-> objek (ada nama, ada nilainya), pakai { }
+-->
+
+<!--
+  /$$$$$$     /$$$$$  /$$$$$$  /$$   /$$
+ /$$__  $$   |__  $$ /$$__  $$| $$  / $$
+| $$  \ $$      | $$| $$  \ $$|  $$/ $$/
+| $$$$$$$$      | $$| $$$$$$$$ \  $$$$/ 
+| $$__  $$ /$$  | $$| $$__  $$  >$$  $$ 
+| $$  | $$| $$  | $$| $$  | $$ /$$/\  $$
+| $$  | $$|  $$$$$$/| $$  | $$| $$  \ $$
+|__/  |__/ \______/ |__/  |__/|__/  |__/
+-->
+AJAX memungkinkan webpage bertukar data dengan server tanpa perlu menekan tombol
+refresh. Data bisa berupa teks, JSON.
+
+<script>
+  $.ajax({
+    type: "GET",
+    url: "Enter the URL",
+    data: {}, //Kalau tipenya GET, ini kosong.
+    success: function (response) {
+      console.log(response);
+    },
+  });
+</script>
+
+<!--
+Terdapat 2 tipe "data" yang biasanya digunakan, POST dan GET. 
+=> POST untuk menambahkan, mengubah, menghapus data. 
+=> GET hanya untuk megnambil/menampilkan data
+-->
+
+<!--CONTOH append ke table-->
+<script>
+  function q1() {
+    $("#names-q1").empty();
+    $.ajax({
+      type: "GET",
+      url: "http://ayamgoreng",
+      data: {},
+      success: function (response) {
+        let rows = response["Nama list/array"]["nama objek"];
+        //Bisa pakai for loop untuk mengambil beberapa kali
+        for (let i = 0; i < rows.length; i++) {
+          //Data yang diambil dijadiin variabel
+          let rack_name = rows[i]["nama key objek 1"];
+          let rack_cnt = rows[i]["nama key objek 2"];
+          let bike_cnt = rows[i]["nama key objek 3"];
+          let temp_html = ""; //mengosongkan variabel
+          if (bike_cnt < 5) {
+            //bisa tambahkan fungsi if, kalau kurang dari 5 ada class "urgent"
+            temp_html = ` 
+                      <tr class='urgent'>
+                          <td>${rack_name}</td>
+                          <td>${rack_cnt}</td>
+                          <td>${bike_cnt}</td>
+                      </tr>
+                      `;
+          } else {
+            temp_html = `
+                      <tr>
+                          <td>${rack_name}</td>
+                          <td>${rack_cnt}</td>
+                          <td>${bike_cnt}</td>
+                      </tr>
+                      `;
+          }
+          $("#names-q1").append(temp_html); //variabel temp_htmlt yg terisi di append.
+        } //Ulangin loop/loop selesai.
+      }, //fungsi anonim selesai
+    }); //Ajax berakhir disini
+  } //fungsi berakhir disini
+</script>
+
+<!--Contoh mengubah URL-->
+<script>
+  function showNumMeaning() {
+    let targetNum = $("#magic-num").val(); //Ngambil angka
+    let targetUrl = "http://numbersapi.com/" + targetNum; //Url tergantung inputan pengguna
+    $.ajax({
+      type: "GET",
+      url: targetUrl, //Disini URLnya bisa berubah tergantung proses diatas.
+      data: {},
+      success: function (response) {
+        $("#meaning").text(response);
+      },
+    });
+  }
+</script>
+
+<!--
+ /$$$$$$$              /$$     /$$                          
+| $$__  $$            | $$    | $$                          
+| $$  \ $$ /$$   /$$ /$$$$$$  | $$$$$$$   /$$$$$$  /$$$$$$$ 
+| $$$$$$$/| $$  | $$|_  $$_/  | $$__  $$ /$$__  $$| $$__  $$
+| $$____/ | $$  | $$  | $$    | $$  \ $$| $$  \ $$| $$  \ $$
+| $$      | $$  | $$  | $$ /$$| $$  | $$| $$  | $$| $$  | $$
+| $$      |  $$$$$$$  |  $$$$/| $$  | $$|  $$$$$$/| $$  | $$
+|__/       \____  $$   \___/  |__/  |__/ \______/ |__/  |__/
+           /$$  | $$                                        
+          |  $$$$$$/                                        
+           \______/   
+-->
+Python itu bahasa pemrograman.. ngakunya powerful, cepat, nudah diintegrasikan,
+mudah dipahami, open source.
+<!--
+Catatannya di file lain... soalnya beda jenis file
+dan tidak ada format otomatis dari VS code.
+-->
+
+<!-- 
+ /$$      /$$                                         /$$$$$$$  /$$$$$$$ 
+| $$$    /$$$                                        | $$__  $$| $$__  $$
+| $$$$  /$$$$  /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$ | $$  \ $$| $$  \ $$
+| $$ $$/$$ $$ /$$__  $$| $$__  $$ /$$__  $$ /$$__  $$| $$  | $$| $$$$$$$ 
+| $$  $$$| $$| $$  \ $$| $$  \ $$| $$  \ $$| $$  \ $$| $$  | $$| $$__  $$
+| $$\  $ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  \ $$
+| $$ \/  | $$|  $$$$$$/| $$  | $$|  $$$$$$$|  $$$$$$/| $$$$$$$/| $$$$$$$/
+|__/     |__/ \______/ |__/  |__/ \____  $$ \______/ |_______/ |_______/ 
+                                  /$$  \ $$                              
+                                 |  $$$$$$/                              
+                                  \______/   
+-->
+Monggo~ salah satu sistem manajemen database berjenis NoSQL
+<!--
+Database berguna untuk menyimpan data dalam jumlah banyak. Terdiri dari 2 jenis
+-> SQL, data disimpan dalam sistem basis data yang terstruktur. Kaku, terstruktur, berjalan baik untuk hal kompleks.
+-> NO SQL, data disimpan dalam bentuk dictionary/objek. Dinamis,bagus untuk cloud, secara umum lebih cepat.
+-->
+Bikin akun, bikin kluster, nambain pengguna basisdata, tambain ip adress.
+Install PyMongo dan DNS python juga... lanjutannya di catatan Python
+
+<!-- 
+/$$$$$$$$ /$$                     /$$      
+| $$_____/| $$                    | $$      
+| $$      | $$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$$$$   | $$ |____  $$ /$$_____/| $$  /$$/
+| $$__/   | $$  /$$$$$$$|  $$$$$$ | $$$$$$/ 
+| $$      | $$ /$$__  $$ \____  $$| $$_  $$ 
+| $$      | $$|  $$$$$$$ /$$$$$$$/| $$ \  $$
+|__/      |__/ \_______/|_______/ |__/  \__/ 
+-->
+Library Python, ini kodingan untuk client, sebagian yang di server di catatan
+yang lain.
+
+<!--Kode dibawah diletakkan di fungsi, akan ada beberapa pengolahan variabel yang mau dikirim-->
+<script>
+  $.ajax({
+    type: "GET",
+    url: "/test?title_give=Matrix",
+    data: {},
+    success: function (response) {
+      console.log(response);
+    },
+  });
+
+  $.ajax({
+    type: "POST",
+    url: "/test",
+    data: { title_give: "Matrix" },
+    success: function (response) {
+      console.log(response);
+    },
+  });
+</script>
+
+<!--Contoh di CLIENT atau index.html-->
+
+<script>
+  document.ready(function () {
+    //Fungsi hanya berjalan kalau dokumen sudah selesai loading
+    listing();
+  });
+
+  //Fungsi yang menunjukkan daftar film, ambil dari Server dan server ngambil dari database.
+  function listing() {
+    $.ajax({
+      type: "GET",
+      url: "/movie",
+      data: {},
+      success: function (response) {
+        //Data JSON yang berhasil diambil dari Server
+        let rows = response["movies"];
+        $("#cards-box").empty();
+        for (let i = 0; i < rows.length; i++) {
+          //Data diubah ke variabel dan dimasukkan ke kontainer kartu. kemudian di looping untuk data berikutnya.
+          let image = rows[i]["image"];
+          let title = rows[i]["title"];
+          let description = rows[i]["description"];
+          let star = rows[i]["star"];
+          let comment = rows[i]["comment"];
+
+          let star_image = "⭐".repeat(star);
+
+          //Data diubah ke bentuk yang lebih baik.
+          let temp_html = `
+            <div class="col">
+                <div class="card h-100">
+                    <img src="${image}"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${title}</h5>
+                        <p class="card-text">${description}</p>
+                        <p>${star_image}</p>
+                        <p class="mycomment">${comment}</p>
+                    </div>
+                </div>
+            </div>
+          `;
+          //Menyatukan ke kontainer
+          $("#cards-box").append(temp_html);
+        }
+      },
+    });
+  }
+
+  //Fungsi lain untuk menambahkan data ke dalam kontainer
+  function posting() {
+    //Ngambil data dari inputan pengguna.
+    let url = $("#url").val();
+    let star = $("#star").val();
+    let comment = $("#comment").val();
+
+    //Data dikirim ke server, nanti server akan mengirim ke database. Kemudian halaman di-reload.
+    $.ajax({
+      type: "POST",
+      url: "/movie",
+      data: {
+        url_give: url,
+        star_give: star,
+        comment_give: comment,
+      },
+      success: function (response) {
+        alert(response["msg"]);
+        window.location.reload();
+      },
+    });
+  }
+</script>
+
+<!--
+ /$$$$$$$                      /$$                    
+| $$__  $$                    | $$                    
+| $$  \ $$  /$$$$$$   /$$$$$$ | $$  /$$$$$$  /$$   /$$
+| $$  | $$ /$$__  $$ /$$__  $$| $$ /$$__  $$| $$  | $$
+| $$  | $$| $$$$$$$$| $$  \ $$| $$| $$  \ $$| $$  | $$
+| $$  | $$| $$_____/| $$  | $$| $$| $$  | $$| $$  | $$
+| $$$$$$$/|  $$$$$$$| $$$$$$$/| $$|  $$$$$$/|  $$$$$$$
+|_______/  \_______/| $$____/ |__/ \______/  \____  $$
+                    | $$                     /$$  | $$
+                    | $$                    |  $$$$$$/
+                    |__/                     \______/  
+-->
+Proses mengupload kodingan ke jasa cloud server. Kalau sudah diupload, aplikasi
+dapat diakses.
+
+<!-- Ada beberapa jenis, yang terkenal AWS, Google Cloud Platform, Microsoft Azure. -->
+Tapi mengikuti tutorial, yang digunakan adalah heroku.
+
+<!--
+PERSIAPAN:
+1. Bikin akun heroku
+2. Download Git
+3. Download heroku cli
+-->
+<!--
+HUBUNGKAN KE MONGO DB
+1. bikin ip address yang dapat diakses
+2. kopas link untuk menghubungkan ke mongodb
+3. Buka venv, login ke heroku dengan "heroku login" kemudian bikin proyek baru, ketik "heroku create"
+3. Buka heroku > pilih proyek > settings > reveal config vars  
+4. Pada "KEY", ketikkan "MONGODB_URI", dan pada "VALUE" , kopas link dari mongodb
+-->
+<!--
+PERSIAPAN DI VS CODE
+===>>> GUNICORN
+ketik ini di venv
+pip install gunicorn
+
+===>>> requirements.txt
+ketik ini di venv
+pip freeze > requirements.txt
+
+===>>> Bikin file baru dengan nama wsgi.py
+isinya 
+==================================
+from app import app
+
+if __name__ == "__main__":
+    app.run()
+==================================
+
+===>>> Bikin file baru dengan nama Procfile
+isinya
+==================================
+web: gunicorn wsgi:app
+==================================
+
+===>>> DEPLOY AKHIR 
+ketik ini semua di venve
+1. membuat .git di directory yang sama.
+git init 
+
+2. Menambahkan file baru, akan memakan waktu.
+git add .
+
+3. Menambahkan informasi email (sebenarny nggak tau gunanya buat ap)
+git config --global user.email "YOUR_EMAIL_ADDRESS_HERE"
+
+4. Menambahkan informasi username (nggak tau gunanya buat apa)
+git config --global user.name "YOUR_FULL_NAME_HERE"
+
+5. Mengupdate data terbaru.
+git commit -am 'Update'
+
+6. Mennetukan target, YOUR_HEROKU_APP_NAME_HERE di kopas dari nama aplikasi di heroku.
+heroku git:remote -a "YOUR_HEROKU_APP_NAME_HERE"
+
+7. Deploy akhir, suka error disini, jadi selamat berusaha......
+git push heroku master
+
+8. Membuka aplikasinya.
+heroku open
+-->

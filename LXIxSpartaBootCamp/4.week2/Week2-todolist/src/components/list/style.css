@@ -1,0 +1,13 @@
+.list_container{
+    padding: 0 24px;
+}
+
+.list_title{
+    display: block;
+    font-Size: 1.5em;
+    margin-Block-Start: 0.83em;
+    margin-Block-End: 0.83em;
+    margin-Inline-Start: 0px;
+    margin-Inline-End: 0px;
+    font-Weight: bold;
+}
