@@ -293,6 +293,105 @@ export default App;
 
 #
 
+# Spread Operator
+
+## Mengambil informasi dan kemudian ditambahkan. berguna untuk menyalin immutable object
+
+#
+
+# Map
+
+## Semacam menggunakan data dari array kemudian membuat baris kode yang sama dengan sedikit perbedaan dengan proses looping.
+
+```jsx
+const App = () => {
+  const hewan = ['ayam','bebek','cicak','domba'];
+
+  return (
+    <div key = {}>
+      {hewan_banyak.map((hewan) => (
+        return (
+          <div>{hewan}</div>
+        )
+      ))}
+  )
+}
+
+export default App;
+
+```
+
+```html
+<!--
+  /$$$$$$   /$$               /$$ /$$                    
+ /$$__  $$ | $$              | $$|__/                    
+| $$  \__//$$$$$$   /$$   /$$| $$ /$$ /$$$$$$$   /$$$$$$ 
+|  $$$$$$|_  $$_/  | $$  | $$| $$| $$| $$__  $$ /$$__  $$
+ \____  $$ | $$    | $$  | $$| $$| $$| $$  \ $$| $$  \ $$
+ /$$  \ $$ | $$ /$$| $$  | $$| $$| $$| $$  | $$| $$  | $$
+|  $$$$$$/ |  $$$$/|  $$$$$$$| $$| $$| $$  | $$|  $$$$$$$
+ \______/   \___/   \____  $$|__/|__/|__/  |__/ \____  $$
+                    /$$  | $$                   /$$  \ $$
+                   |  $$$$$$/                  |  $$$$$$/
+                    \______/                    \______/ 
+-->
+```
+
+# Styling tambahan
+
+```html
+yarn add styled-components
+```
+
+## style bisa ditambahkan dengan beberapa cara...
+
+1. dengan style = {}
+2. dengan file css
+3. masuk ke jsx lewat children
+
+```jsx
+import styled from "styled-components";
+
+// Masukkin css di dalam ini
+const Box = styled.div`
+  background-color: teal;
+`;
+
+const Text = styled.span`
+  background-color: cyan;
+`;
+function App() {
+  return (
+    <Box>
+      <Text>Sesuatu</Text>
+    </Box>
+  );
+}
+
+export default App;
+```
+
+# Styling dengan kondisi
+
+```js
+import styled from "styled-components";
+
+// Kondisinya dimasukkin lewat js dengan ${} dan props
+const Children = styled.div`
+  background-color: ${(props) => props.yg_dikirim};
+`;
+
+function App() {
+  let isinya = "green";
+  if (true) {
+    isinya = "cyan";
+  }
+  return <Children yg_dikirim={isinya}>isi children</Children>;
+}
+
+export default App;
+```
+
 # State
 
 ## Nilai di dalam komponen yang berubah.
@@ -308,7 +407,7 @@ const [contoh_state, setContoh_state] = useState(
 );
 ```
 
-Mengubah dengan tombol atau onClick
+# Mengubah dengan tombol atau onClick
 
 ```jsx
 import { useState } from "react"; // Jgn lupa import use state
@@ -356,7 +455,7 @@ const App = () => {
 export default App;
 ```
 
-Mengubah dengan onChange
+# Mengubah dengan onChange
 
 ```jsx
 import React, { useState } from "react"; // Jgn lupa import use state
@@ -390,30 +489,69 @@ export default App;
 
 #
 
-# Spread Operator
-
-## Mengambil informasi dan kemudian ditambahkan. berguna untuk menyalin immutable object
-
-#
-
-# Map
-
-## Semacam menggunakan data dari array kemudian membuat baris kode yang sama dengan sedikit perbedaan.
+# Use Effect
 
 ```jsx
+import React, { useEffect, useState } from "react";
+
 const App = () => {
-  const hewan = ['ayam','bebek','cicak','domba'];
+  const [isi, setIsi] = useState("");
+
+  // Akan berjalan setiap ada yg di render
+  // Namanya wajib "useEffect" semua
+  useEffect(() => {
+    console.log("Ada yang dirender");
+  });
+
+  // Array [] memberi tahu kapan useEffect dijalankan. Hanya berjalan kalau yg didalam [] berubah. Karena kosong, jadi nggak akan diulang lagi.
+  useEffect(() => {
+    console.log("Ada yang dirender");
+  }, []);
+
+  // Akan berjalan kalau misalnya nilai dari isi berubah
+  useEffect(() => {
+    console.log("current value of isi is", isi);
+  }, [isi]);
+
+  // Bisa ngambil data sebelumnya
+  // Kalau ada 2 yang mengamati variabel yang sama, maka yang dijalankan yang paling terakhir.
+  useEffect(() => {
+    console.log("ayam goreng");
+    return () => {
+      // Ntah kenapa ini jalan duluan
+      console.log("nilai sebelumnya adalah", isi);
+    };
+  }, [isi]);
 
   return (
-    <div key = {}>
-      {hewan_banyak.map((hewan) => (
-        return (
-          <div>{hewan}</div>
-        )
-      ))}
-  )
-}
+    <div>
+      <input
+        value={isi}
+        onChange={(event) => {
+          setIsi(event.target.value);
+        }}
+      />
+    </div>
+  );
+};
 
 export default App;
+```
 
+# Deploy
+
+```html
+<!--
+       /$$                     /$$                    
+      | $$                    | $$                    
+  /$$$$$$$  /$$$$$$   /$$$$$$ | $$  /$$$$$$  /$$   /$$
+ /$$__  $$ /$$__  $$ /$$__  $$| $$ /$$__  $$| $$  | $$
+| $$  | $$| $$$$$$$$| $$  \ $$| $$| $$  \ $$| $$  | $$
+| $$  | $$| $$_____/| $$  | $$| $$| $$  | $$| $$  | $$
+|  $$$$$$$|  $$$$$$$| $$$$$$$/| $$|  $$$$$$/|  $$$$$$$
+ \_______/ \_______/| $$____/ |__/ \______/  \____  $$
+                    | $$                     /$$  | $$
+                    | $$                    |  $$$$$$/
+                    |__/                     \______/   
+-->
 ```
