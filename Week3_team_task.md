@@ -10,7 +10,7 @@ what is **one-way data flow?**
 - When something happens (such as a user clicking a button), the state is updated based on what occurred
 - The UI re-renders based on the new state
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/658be612-4945-4d14-b507-09e6f9a33a70/Untitled.png)
+![image](https://user-images.githubusercontent.com/116085209/199230313-05cb3f9b-c17a-4e05-bb61-647eb7ae4519.png)
 
 However, the simplicity can break down when we have **multiple components that need to share and use the same state**, especially if those components are located in different parts of the application. Sometimes this can be solved by ["lifting state up"](https://reactjs.org/docs/lifting-state-up.html) to parent components, but that doesn't always help.
 
