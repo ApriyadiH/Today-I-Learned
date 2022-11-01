@@ -1,3 +1,328 @@
+# Team 1
+
+<aside>
+🔐 Q1. Component A is subscribing Redux store. 
+If the data saved in Redux has changed, (Let’s say that the variable that A is subscribing has changed) in what process does component A go through to get the changed variable? Demonstrate the flow (use pictures, presentation slides, hand-drawn, etc)
+
+</aside>
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4a8c074-0dac-460c-8b55-21900fe5c94f/Untitled.png)
+
+Let’s say component A is a counter component/function and it subscribes to the store a variable named “count”.
+
+The view/UI, the count shows zero (current state of var count), and the plus button clicked (action), and it triggers the dispatch() function to make an object containing "action and the current state of variable count which is zero" then send it to the reducer function.
+Then reducer function checks whether the action is needed. If it is needed, then the reducer will return a new value as a new state then send it to the counter component (and probably other components, that need it), then update it on the UI. The counter component then saves the new state as the current state.
+
+<aside>
+🔐 Q2. What is optional chaining? In what circumstance do we use it?
+
+</aside>
+
+Optional chaining (?.) is a safe way to access nested object properties, even if an intermediate property doesn’t exist. If the object is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) or [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null), it returns [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) instead of throwing an error.
+
+Here’s the example of optional chaining operator use case:
+
+![Capture.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d7868f6-acb0-4959-b63e-269828e48a87/Capture.png)
+
+Beside accessing a property of an object, we can use optional chaining operator to access function inside an object. Here’s the example:
+
+```jsx
+let userAdmin = {
+  admin() {
+    alert("I am admin");
+  }
+};
+
+let userGuest = {};
+
+userAdmin.admin?.(); // I am admin
+
+userGuest.admin?.(); // nothing happens (no such method)
+```
+
+We can also use `?.[]` syntax if we’d like to use brackets `[]` to access properties instead of dot `.`
+
+For example:
+
+```jsx
+const adventurer = {
+  name: 'Joseph',
+  cat: {
+    name: 'Caster'
+  },
+  dog: null
+};
+
+console.log(adventurer.dog?.[name])
+// expected output: undefined
+```
+
+To summarize, the optional chaining `?.` syntax has three forms:
+
+1. `obj?.prop` – returns `obj.prop` if `obj` exists, otherwise `undefined`.
+2. `obj?.[prop]` – returns `obj[prop]` if `obj` exists, otherwise `undefined`.
+3. `obj.method?.()` – calls `obj.method()` if `obj.method` exists, otherwise returns `undefined`.
+
+We should use ?. only where it’s ok that something doesn’t exist. As an example, let’s say we have **user** objects that hold the information about users. Most of our users have addresses in **user.address** property, with the street **user.address.street**, but some didn’t provide them. So, it is best to access address property using **user.address?.property.**
+
+<aside>
+🔐 Q3. If you use <button type="submit"> when you use <form>, Redux data is initialised. Explain why.
+
+</aside>
+
+Form is element to associate the button. When submit forms using button form, redux state changed too but the value is provided on initialValues prop or reduxForm() config paramater so when the submit button is submitted the value of filled form and the initialValues will initialize the value and loaded into the form state. The input data will be captured by onSubmit. In addition to being captured by onSubmit. So data will also be captured in redux.
+
+<aside>
+🔐 Q4. What method do you have to use to maintain the data within Redux after refreshing?
+
+</aside>
+
+With the Redux Persist library, developers can save the Redux store in persistent storage, for example, the local storage. Therefore, even after refreshing the browser, the site state will still be preserved. Redux Persist also includes methods that allow us to customize the state that gets persisted and rehydrated, all with an easily understandable API. 
+
+### How to use Redux Persist:
+
+1. Install the package via npm or yarn. Command:
+
+```jsx
+npm i redux-persist
+```
+
+1. Add the required imports to the redux store:
+    
+    ```jsx
+    //store.js
+    import storage from ‘redux-persist/lib/storage’;
+    import { combineReducers } from ‘redux’;
+    import {	
+    	persistReducer,	
+    	FLUSH,	
+    	REHYDRATE,	
+    	PAUSE,	
+    	PERSIST,	
+    	PURGE,	REGISTER,
+    } from ‘redux-persist’;
+    ```
+    
+2. Create the persist object config that will be stored to the storage:
+
+```jsx
+//store.js
+const persistConfig = {	key: ‘counter’,	storage,};
+```
+
+The key specifies the ID of the persist object and the storage determines the type of storage being used.
+
+1. Combine the reducers:
+
+```jsx
+//store.js
+Const reducers = combineReducers({ counter: counterSlice });
+```
+
+1. Create a persistent reducer:
+
+```jsx
+//store.js
+const persistedReducer = persistReducer(persistConfig, reducers);
+```
+
+1. Assign the persist reducer to the reducers and extra dispatch functions to the ignore list in the middleware:
+
+```jsx
+//store.js
+export default configureStore ({	
+	reducer: persistedReducer,	
+	middleware: (getDefaultMiddleware) =>	
+		getDefaultMiddleware({	
+			serializableCheck: {	
+				ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, REGISTER],	
+			},	
+		}),
+	});
+```
+
+1. React-redux gives us Provider component that will wrap the whole app, similarly we get PersistGate from redux-persist, that need it to wrap around the whole app
+
+```jsx
+//index.js
+import from { persistStore } from ‘redux-persist’;
+import from { persistGate } from ‘redux-persist/integration/react’
+//…
+let persistor = persistStore(store);
+
+ReactDOM.render (	
+	<React.StrictMode>	
+		<Provider store={store}>	
+			<PersistGate persistor={persistor}>	
+				<App />	
+			</PersistGate>	
+		</Provider>	
+</React.StrictMode>,	
+document.getElementById(‘root’)
+);
+```
+
+The persistStore will configure the store object to become compatible when we pass it to the PersistGate component.
+
+1. With all the connection done, now your react app can persist when when page changes and or the page reloads.
+    
+    If we check it with *redux-logger*, we can see that it first checks with PERSIST action and rehydrate the store with the REHYDRATE action.
+    
+
+[10/31] team presentation screenshot
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dc3920a9-d1d7-415d-ae04-768c42f0319f/Untitled.png)
+
+PowerPoint link: [https://docs.google.com/presentation/d/1CE-puASdhAjBjgtE7RC_JqZ3zep7hHE9X72_4uuqhbo/edit#slide=id.g17cbd7cc4c8_28_7067](https://docs.google.com/presentation/d/1CE-puASdhAjBjgtE7RC_JqZ3zep7hHE9X72_4uuqhbo/edit?usp=sharing)
+
+Upload here by 9:30!
+
+# DIY Section
+
+<aside>
+🔑 Q1. What are the differences between URI, URL, and URN?
+
+</aside>
+
+**URI** (uniform resource identifier) is string identifier that refers to the identity of a resource on the internet using either a location, name, or both. URI used to identify and differentiate a resource from others by using the name of the resource or the location of the resources.
+
+Syntax of URI:
+
+![Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)](https://miro.medium.com/max/720/1*bmrPZ9HbzIK2Yh4dr7rS2w.png)
+
+Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)
+
+**Scheme** specify in what way you access a resource. The scheme in a URI can be protocol, designation, specification, or anything. Scheme usually contains a sequence of characters that can be a combination of letters, digits, hyphen (_), or a plus sign (+) which, is then followed by a colon(:). A few of the most popular schemes are **HTTP**, **FTP**, **file**, and **data**. 
+
+**Authority** contains three elements:
+1. User info (Optional. Contain a username and a password (optional) separated by a colon (:) which are followed by an @ symbol.)
+2. Host (Either a registered domain name or an IP address. The IP address is enclosed within squared ([]) brackets.)
+3. Port (Optional. Port is a number that points to the port number for the domain or IP address.)
+
+**Path** is a sequence of segments that refers to the location of a resource separated by a slash (/). URI always specifies a path. However, the specified path may also be empty in some cases.
+
+**Query** (optional) contains a query string (consist of a name and value pairs) that further identifies a resource. 
+
+**Fragment** (optional) further points to the smaller components within that resource, like different sections of a resource.
+
+Example of URI:
+1. mailto:hey.john@website.com
+2. file:website.com/pathtofile/intro.pdf
+3. [https://john@website.com:5052/path/to/page](https://john@website.com:5052/path/to/page)
+
+URI has two subsets, URL and URN.
+
+![Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70c18a1b-bab6-419f-827f-85b20dccf13e/Untitled.png)
+
+Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)
+
+**URL** (uniform resource locator) refers to the location of a resource on the internet. The aim of URL is to find the location or address of a resource on the web. All the URLs can be URIs, but all URIs cannot be URLs because a URI contains both URL and URN.
+
+Syntax of URL:
+
+![Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1097137-eb0e-47fa-941b-222390ebcee1/Untitled.png)
+
+Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)
+
+The scheme in URL usually a protocol such as HTTP, HTTPS, FTP, etc.
+
+In URL, authority has two sub-components:
+1. Host 
+2. Port (optional)
+
+Example of URL:
+1. http://website.com/path/to/page
+2. https://website.com/path/here?name=html#head
+3. http://website.com:5500/path/here
+
+**URN** (uniform resource name) refers to a resource on the internet without actually specifying its location or existence. URN used to identify resources in a *permanent way*, even after that resource does not exist anymore. All the URNs can be URIs, but all URIs cannot be URNs because a URI contains both URL and URN.
+
+Syntax of URN:
+
+![Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0d6eb1a0-d77f-40d2-aa08-45716e57282f/Untitled.png)
+
+Source: [https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0](https://levelup.gitconnected.com/what-is-the-difference-between-a-uri-url-and-urn-6c6ea3b49bf0)
+
+The scheme used must be urn.
+
+NSI (namespace identifier) stands for a string representing the resource category you want to identify. NSI may include letters, digits, and hyphen(-) followed by a colon (:).
+
+NSS (namespace-specific string) is the resource's specific identifier, and its format depends on the namespace identifier. The NSS may contain ASCII letters, digits, many punctuations, and special characters.
+
+Example of URN:
+
+1. urn:website:language:html:head
+2. urn:isan:0000-0000-2CEA-0000-1-0000-0000-Y
+3. urn:ISSN:0167-6423
+
+<aside>
+🔑 Q2. When are we supposed to use Redux? And when we are not?
+
+</aside>
+
+Imagine you build a dashboard for data visualization. The dashboard includes a set of widgets and provides users with a lot of options to customize them. A user will adjust widgets according to their needs and the app state will change based on the user input.
+
+If you don’t use Redux, the responsibility of managing and sharing the state gets distributed between all widgets. In this case, you might have a tough time fixing data inconsistency bugs. But if you add Redux, all widgets start to communicate via a single global store, which simplifies keeping the state of all widgets in sync. And here are several more **reasons why use Redux** in your app:
+
+- You need the same state to be shared between multiple components reflected in different parts of the app.
+- The app states change frequently and different components can initiate changes simultaneously.
+- The app has a medium-to-large codebase with several React developers working on it.
+- You need to monitor and record how the app state is changing over time to have a clear understanding of your app behavior.
+- You need convenient tools to fix state management bugs quickly and want to leverage Redux DevTools for testing.
+
+Even though Redux is a great tool for state management, it's important not to overuse it. Using Redux in simple and small apps may add unjustified complexity to the app architecture, lead to wasteful memory usage, and require adding a caching solution to back up the application state. **You might not need Redux if** your app state management:
+
+- Implies simple UI changes that follow plain logic.
+- Handles data that comes from a single source per view and there is no or little risk of having data inconsistency bugs.
+- Requires pushing data as props to components within one subtree in your app structure, which can be done using the React [Context](https://reactjs.org/docs/context.html) dependency injection.
+
+For example, consider modals’ open/close state. It's important to render modals at the root, but keeping their states in Redux isn’t necessary. A better approach, in this case, would be to create a [Portal](https://reactjs.org/docs/portals.html) for the modals and handle their state only where they are being toggled.
+
+<aside>
+🔑 Q3. What are Single Page Applications?
+
+</aside>
+
+In simple terms, a Single Page Application is where the server sends what you need with each click, and the browser renders that information without the need to reload the page again. Note that the server renders a full page in traditional applications with every click you make and sends it to your browser. This makes the loading time much faster and is a lot more cost-efficient. Single Page Applications take advantage of the repetitive content, i.e., headers, footers, logos, and navigation bars found on most websites. To understand the repetitive content, consider an example of Gmail, remember every time you browse your email, you will notice that the sidebar and the header remain untouched.
+
+![source: [https://www.codingninjas.com/codestudio/library/single-page-apps-vs-multi-page-apps](https://www.codingninjas.com/codestudio/library/single-page-apps-vs-multi-page-apps)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04daed67-138a-497e-8ade-d31ef0b56ee6/Untitled.png)
+
+source: [https://www.codingninjas.com/codestudio/library/single-page-apps-vs-multi-page-apps](https://www.codingninjas.com/codestudio/library/single-page-apps-vs-multi-page-apps)
+
+<aside>
+🔑 Q4. What is the difference between query parameter and path parameter?
+
+</aside>
+
+There may be query and **path parameters within the URL. Each holds a different position and performs separate functions.
+
+Path parameter:
+1. Positioned to the left of the question mark (?)
+2. Can’t be omitted as it would change the URL path
+3. Used to identify a specific resource or page
+
+Query parameter:
+1. Positioned to the right of the question mark (?)
+2. Can be omitted since they aren’t part of URL
+3. Used to sort and filter resources
+
+<aside>
+🔑 Q5. What is  ****`StrictMode` ****?
+
+</aside>
+
+`StrictMode` ****is a tool for highlighting potential problems in an application. Like `Fragment`, `StrictMode` does not render any visible UI. It activates additional checks and warnings for its descendants.
+
+`StrictMode` currently helps with:
+
+- Identifying components with unsafe lifecycles
+- Warning about legacy string ref API usage
+- [Warning about deprecated findDOMNode usage](https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage)
+- [Detecting unexpected side effects](https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects)
+- [Detecting legacy context API](https://reactjs.org/docs/strict-mode.html#detecting-legacy-context-api)
+- [Ensuring reusable state](https://reactjs.org/docs/strict-mode.html#ensuring-reusable-state)
+
+
 # Team 5
 
 <aside>
