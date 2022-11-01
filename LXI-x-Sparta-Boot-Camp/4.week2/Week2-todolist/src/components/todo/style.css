@@ -1,0 +1,47 @@
+.list_wrapper {
+    display:flex;
+    flex-Wrap:  wrap  ;
+    gap:  12px  ;
+}
+
+.to_do_container{
+    border:  4px solid seagreen ;
+    border-Radius:  12px  ;
+    padding:  12px 24px 24px  ;
+    width:  270px 
+}
+
+.to_do_title{
+    display:  block  ;
+    overflow-wrap: anywhere;
+    font-Size:  1.5em  ;
+    margin-Block-Start:  0.83em  ;
+    margin-Block-End:  0.83em  ;
+    margin-Inline-Start:  0px  ;
+    margin-Inline-End:  0px  ;
+    font-Weight:  bold 
+}
+
+.button_set{
+    display:  flex  ;
+    gap:  10px  ;
+    margin-Top:  24px  ;      
+}
+
+.delete_button{
+    background-Color:  #fff  ;
+    border:  2px solid red  ;
+    border-Radius:  8px  ;
+    cursor:  pointer  ;
+    height:  40px  ;
+    width:  50% 
+}
+
+.complete_button{
+    background-Color:  #fff  ;
+    border:  2px solid green  ;
+    border-Radius:  8px  ;
+    cursor:  pointer  ;
+    height:  40px  ;
+    width:  50% ;
+}

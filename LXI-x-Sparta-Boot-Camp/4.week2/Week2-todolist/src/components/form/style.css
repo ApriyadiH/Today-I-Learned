@@ -1,0 +1,39 @@
+.add_form{
+    background-Color:  #eee ;
+    border-Radius:  12px ;
+    justify-Content:  space-between ;
+    margin:  0 auto ;
+    padding:  30px ;
+    
+    display: flex ;
+    align-Items: center ;
+}
+
+.input_group {
+    align-Items:  center ;
+    display:  flex ;
+    gap:  20px ;
+}
+
+.form_label{
+    font-Size:  16px ;
+    font-Weight:  700 
+}
+
+.add_input{
+    border:  none ;
+    border-Radius:  12px ;
+    height:  40px ;
+    padding:  0 12px ;
+    width:  240px 
+}
+
+.add_button {
+    background-Color:  teal ;
+    border:  none ;
+    border-Radius:  10px ;
+    color:  #fff ;
+    font-Weight:  700 ;
+    height:  40px ;
+    width:  140px 
+}
