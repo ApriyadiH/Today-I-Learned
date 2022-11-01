@@ -368,4 +368,29 @@ Sunday stil learning and studying the video lecture. For short summary, redux wi
 ```
 We are working on team task, learning the theory part. How redux works, how to store the data after refresh, optional chaining, and button type and its effect for redux. Button have several type and it may refresh the page and re-initialize redux data. At some point we need to refresh, redux can store its data with sessions or local storage and many other way. 
 
+#
 
+![image](https://user-images.githubusercontent.com/116085209/199289914-07e173f1-5bbd-438c-9e45-b68e704be513.png)
+
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  | $$  \__/
+ /$$__  $$ |____  $$| $$  | $$        | $$  | $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$        | $$  | $$__  $$
+| $$  | $$ /$$__  $$| $$  | $$        | $$  | $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/   
+-->
+```
+i don't think i have huge improvement today. Just doing personal task. The pace is quite slow and i kept reviewing lecture notes several times. I also move several folder on github repository. I think it is good for now.
+
+Today i'm not doing that well.
+
+I need to improve my basic knowledge with redux. 
+
+I always put 1 image each day, Actually forgot to take better screenshot. But the image from last sessions when we are done with sharing team task DIY questions on Zoom. 
