@@ -310,6 +310,13 @@ export default App;
 
 ## Mengambil informasi dan kemudian ditambahkan. berguna untuk menyalin immutable object
 
+```jsx
+const box = { size: "big", color: "red" };
+
+const newBox = { ...box }; // {size: "big", color: "red"}
+const newBlueBox = { ...box, color: "blue" }; // {size: "big", color: "blue"}
+```
+
 #
 
 # Map
@@ -606,17 +613,81 @@ export default App;
 
 # Persiapan
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. Install Redux
+
+```
+yarn add redux react-redux
+```
+
+2. Tambah folder redux di dalam src.
+3. Tambah folder config, modules di dalam folder redux.
+4. Tambah file "configStore.js" di dalam folder config
+5. Tuliskan ini di dalam configStore.js
+
+```jsx
+import { createStore } from "redux";
+import { combineReducers } from "redux";
+
+const rootReducer = combineReducers({});
+const store = createStore(rootReducer);
+
+export default store;
+```
+
+6. Tambah beberapa baris kode di index.js
+
+```jsx
+// Tambahkan ini di bagian atas
+import store from "./redux/config/configStore";
+import { Provider } from "react-redux";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+
+// Tambahkan pembungkus Provider dan letakkan App di dalam.
+  <Provider store={store}>
+    <App />
+  </Provider>
+```
+
+7. Persiapan selesai, tambahkan module sesuai kebutuhan di modules (baca bagian selanjutnya).
+8. Jangan lupa tambahkan baris kode baru modules ke configStore.js
+
+```jsx
+// tambah diatas
+import namaModules from "../modules/namaModules";
+
+const rootReducer = combineReducers({
+  yg_dikirim: namaModules, // <-- ubah di rootreducer
+});
+const store = createStore(rootReducer);
+```
 
 #
 
-# Deploy
+# Module
+
+```jsx
+// State awal
+const stateAwalBiasa = 0;
+const stateAwalArray = [0];
+const stateAwalObjek = {
+  state_id: 0,
+  name: "Ayam Goreng",
+};
+
+// reducer
+// Semacam fungsi gitu deh
+const namaFungsi = (state = stateAwal, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+};
+
+// Jangan lupa export fungsinya
+export default namaFungsi;
+```
 
 ```html
 <!--
@@ -633,3 +704,5 @@ export default App;
                     |__/                     \______/   
 -->
 ```
+
+# Deploy
