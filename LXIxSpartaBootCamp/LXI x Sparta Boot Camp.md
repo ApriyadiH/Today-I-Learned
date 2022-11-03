@@ -394,3 +394,59 @@ Today i'm not doing that well.
 I need to improve my basic knowledge with redux. 
 
 I always put 1 image each day, Actually forgot to take better screenshot. But the image from last sessions when we are done with sharing team task DIY questions on Zoom. 
+
+#
+
+![day 17](https://user-images.githubusercontent.com/116085209/199647544-26d82628-fe6d-407f-8add-d067c43ec8d3.png)
+
+```html
+<!--
+       /$$                             /$$   /$$$$$$$$
+      | $$                           /$$$$  |_____ $$/
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$       /$$/ 
+ /$$__  $$ |____  $$| $$  | $$        | $$      /$$/  
+| $$  | $$  /$$$$$$$| $$  | $$        | $$     /$$/   
+| $$  | $$ /$$__  $$| $$  | $$        | $$    /$$/    
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$ /$$/     
+ \_______/ \_______/ \____  $$      |______/|__/      
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/          
+-->
+```
+Today I'm working on personal task. I have good progress today and manage to finsihed the task with help from mentoring. Later when i tried to deploy it, i have some issue with the url. Somehow github behave weirdly with router. So i need to change BrowserRouter to HashRouter. I'm not really sure what is the difference except it use "#" or not but it works better with HashRouter.
+
+I think nothing is really good but just okay. Not much innovative part from this personal task and all of it seems average.
+
+I need to improve my knowledge about deploying react app. Like what each new code line actually do. After trial and error, i think i can deploy new app without thinking too much.
+
+The image from last part around 11 pm. We are supposed to share our TIL with Zoom but cancelled because several people still haven't submit their personal tasks. Actually i'm one of them. I thought the deadline is later and i still have time to deploy my app on github. In the end i just submit it without deploying. After the deadline i asked mentor and the problem solved. App deployed succesfully. Really amazing.
+
+#
+
+![day 18](https://user-images.githubusercontent.com/116085209/199767776-03ac118e-48a3-4e33-8a20-e96c5c977b5c.png)
+
+```html
+<!--
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  | $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$  |  $$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        | $$   >$$__  $$
+| $$  | $$ /$$__  $$| $$  | $$        | $$  | $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/     
+-->
+```
+Week 3 just end. Last day ended with exam. I think i'm doing well since i finished 1 hr earlier. But for last question i'm not really sure why normal function will cause an error but arrow function works fine. Really weird
+
+For this week, i learned lot of new stuff like styling with styled components, best practice for react js folder structure, duck pattern, redux. Redux use lot of new term like action, create action, reducer, payload, dispatch, selector. Really hard for me and those terms sounds like random word put together. But now it sounds reasonable. I saw the animation, team task covered it a little bit. But i didn't understand at that time.  
+
+i didn't add lot of new stuff in catatan_react.md for now. I will fixed it later. 
+
+Miss Eunseo said people in Sparta Coding Club will read this TIL. Am i allowed to write my notes with Indonesian Language ? Also hi. 아녕하세요. Before boot camp i learned korean every day. But for last 2 days i didn't. Maybe i spent too much time for this bootcamp. I'm sorry I will not add this part in the future since this is supposed to be programming TIL. Thank you for reading. 
+
+i took the image after i finished the test. 
