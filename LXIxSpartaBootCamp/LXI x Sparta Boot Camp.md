@@ -450,3 +450,23 @@ i didn't add lot of new stuff in catatan_react.md for now. I will fixed it later
 Miss Eunseo said people in Sparta Coding Club will read this TIL. Am i allowed to write my notes with Indonesian Language ? Also hi. 아녕하세요. Before boot camp i learned korean every day. But for last 2 days i didn't. Maybe i spent too much time for this bootcamp. I'm sorry I will not add this part in the future since this is supposed to be programming TIL. Thank you for reading. 
 
 i took the image after i finished the test. 
+
+#
+
+```html
+<!-- 
+       /$$                             /$$    /$$$$$$ 
+      | $$                           /$$$$   /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |_  $$  | $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$        | $$  |  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$        | $$   \____  $$
+| $$  | $$ /$$__  $$| $$  | $$        | $$   /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |______/ \______/ 
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/        
+-->
+```
+Working on new week project. Learned about function  and object in JS. More details on catatan_js. 
+
