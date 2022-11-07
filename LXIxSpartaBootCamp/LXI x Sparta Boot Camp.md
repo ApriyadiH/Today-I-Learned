@@ -470,3 +470,71 @@ i took the image after i finished the test.
 ```
 Working on new week project. Learned about function  and object in JS. More details on catatan_js. 
 
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/| $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/ | $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$      | $$      | $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Learning lecture notes and videos. Lot of new stuff for optimizing, new tools like toolkit, json server, custom hooks, axios. It will be really hard. No image for this day.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/200371096-df70bf6b-8931-45dc-b365-72bb3f520ab0.png)
+![image](https://user-images.githubusercontent.com/116085209/200371150-6ae55345-7f33-4a36-9fad-f779851cc6af.png)
+
+
+```html
+<!--
+       /$$                            /$$$$$$    /$$  
+      | $$                           /$$__  $$ /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|_  $$  
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/  | $$  
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/   | $$  
+| $$  | $$ /$$__  $$| $$  | $$      | $$        | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$ /$$$$$$
+ \_______/ \_______/ \____  $$      |________/|______/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/  
+-->
+```
+Sunday is supposed to be free day or learning more lecture nots. But on afternoon we are discussing our team task project on ZEP. Discussing about older wireframe, some project scope so it isn't really hard and feasible within 3 days. Spread the job. I'm working on the logic or CRUD API.
+2 images from when we started and we finished. 
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/200372276-4a9c2756-411e-4bf9-9fba-1b703d7cdf24.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/  /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/  /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$      | $$      | $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$| $$$$$$$$
+ \_______/ \_______/ \____  $$      |________/|________/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/       
+-->
+```
+Today we are working on team task theory and project. The theory is relatively easy. Then explain the answer to other team member. After that we are working on team task project. Most UI are already done. Other team Yudhit is really amazing. I just convert the existing code to Toolkit Redux version so we can use the devkit. Also working on how to convert a text on images. Later i need to learn how to stack multiple image and convert it to one image.
+
+We also discussing past exam answer. More or less i think i answered correctly. 
+
+I forgot to take the screenshot from zoom session and ZEP, so i use UI image for this week project. Hopefully i have enough time.
+
