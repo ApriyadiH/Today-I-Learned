@@ -27,7 +27,14 @@
       "comment_id": "1",
       "name": "userX01",
       "comment": "Hahahaha!!!!"
-    },
-    ]
+    }
+    ],
+    "comment" : 
+      {
+        "card_id": "",
+        "comment_id": "",
+        "name": "",
+        "comment": ""
+      },
   }
 }
