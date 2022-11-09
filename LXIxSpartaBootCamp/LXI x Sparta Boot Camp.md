@@ -538,3 +538,36 @@ We also discussing past exam answer. More or less i think i answered correctly.
 
 I forgot to take the screenshot from zoom session and ZEP, so i use UI image for this week project. Hopefully i have enough time.
 
+# 
+
+![image](https://user-images.githubusercontent.com/116085209/200708856-317ec10b-63bf-4805-af87-23b2db2703f2.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/   /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/   |___  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$       /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+
+Still working on team task... it is really hard and i'm totally not focused on the essential requirement, but i'm done with stacking images. Lot of issues like wrapping text. It is still looks good i can make custom image with combining several images and some text. Also All of those are converted to image. 
+
+Image for user interface and some result.
+
+
+
+
+
+
+
+
+
+
