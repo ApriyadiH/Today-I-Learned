@@ -1,0 +1,33 @@
+{
+    "kartu": {
+      "cards": [
+      {
+        "id": "1",
+        "title": "Coba aja",
+        "imagelink": "https://images-cdn.9gag.com/photo/aQX6YeK_700b.jpg",
+        "category": "trap",
+        "description": "lorem ipsum sadaoidoa assdaidias asduashsdhida"
+      }
+      ],
+      "card": {
+        "id": "0",
+        "title": "",
+        "imagelink": "",
+        "category": "",
+        "description": ""
+      },
+      "filtered_cards" : [
+  
+      ]
+    },
+    "komentar" : { 
+      "comments" : [
+      {
+        "card_id": "1",
+        "comment_id": "1",
+        "name": "userX01",
+        "comment": "Hahahaha!!!!"
+      }
+      ]
+    }
+  }
