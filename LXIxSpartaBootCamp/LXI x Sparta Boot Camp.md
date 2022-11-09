@@ -562,11 +562,28 @@ Still working on team task... it is really hard and i'm totally not focused on t
 
 Image for user interface and some result.
 
+# 
+
+![image](https://user-images.githubusercontent.com/116085209/200903141-abc9f3bd-f21c-44a8-8cea-338546caf773.png)
 
 
+```html
+<!--
+       /$$                            /$$$$$$  /$$   /$$
+      | $$                           /$$__  $$| $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  | $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/| $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/ |_____  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$            | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$      | $$
+ \_______/ \_______/ \____  $$      |________/      |__/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
 
-
-
+I made that meme card with our app. Honestly it feels good to work on that image. Converting text to image is quite hard and totally new for me. But missing lot of essentials requirements. I still need to learn how to combine axios, thunk and json server. Somehow i hope video lectures teach us about those stuff directly instead of teaching the basic concept. 
 
 
 
