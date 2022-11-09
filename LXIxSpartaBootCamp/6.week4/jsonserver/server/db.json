@@ -29,12 +29,13 @@
       "comment": "Hahahaha!!!!"
     }
     ],
-    "comment" : 
+    "comment" : [
       {
         "card_id": "",
         "comment_id": "",
         "name": "",
         "comment": ""
-      },
+      }
+    ]
   }
 }
