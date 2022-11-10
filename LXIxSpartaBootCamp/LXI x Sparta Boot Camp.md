@@ -585,6 +585,36 @@ Image for user interface and some result.
 
 I made that meme card with our app. Honestly it feels good to work on that image. Converting text to image is quite hard and totally new for me. But missing lot of essentials requirements. I still need to learn how to combine axios, thunk and json server. Somehow i hope video lectures teach us about those stuff directly instead of teaching the basic concept. 
 
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201147442-68ce04f2-6ded-4de7-8e64-394b5b9010b4.png)
+
+#
+
+```
+<!--
+       /$$                            /$$$$$$  /$$$$$$$ 
+      | $$                           /$$__  $$| $$____/ 
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$      
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/| $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/ |_____  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$       /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/       
+-->
+```
+Today is the exam, theory test, relatively hard. At least i manage to answer almost all of the questions except for number 3. Code question is hard and i need to test it and make sure the code works. 
+
+Learn lof of new terms today. 
+High order component basically like adopting a parent or wrapping existing code with extra layer.
+reconciliation, one of the video give a nice explaination. Basically react only render specific change to increase the performance.
+Flux and MVC algorithm isn't a new knowledge for me. But i have no idea for a good application with MVC in react.
+Other library for managing state, we just learned redux, there are more like Zustand, MobX. Also while i searched about these stuff, i also see easypeasy. The article said it combine both of redux and zustand good side. Maybe it is better ? but for now Redux is more popular, which mean more documentation and error case in stackoverflow or other sites.
+
+Image from near last sessions where we are playing mini game like Zombie, bomb and painting floor.
 
 
 
