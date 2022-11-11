@@ -616,5 +616,35 @@ Other library for managing state, we just learned redux, there are more like Zus
 
 Image from near last sessions where we are playing mini game like Zombie, bomb and painting floor.
 
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201374110-05aace3b-dac9-4e37-ae40-ddf281fe6e3c.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \__/
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/| $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/ | $$__  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$      | $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+
+Start with reviewing old exam questions. I think i made lot of mistakes and missing lot of important points. But it is clear now after we discuss the answer with Mentor Justin. After that some short review for our weekly project. This week we should clone coding other sites. We choose yugioh card maker, similar project like before but hopefully we can fix more feature and add more.
+
+Image from the briefing from Miss Eunseo.
+
+
+
+
+
+
+
 
 
