@@ -640,9 +640,70 @@ Start with reviewing old exam questions. I think i made lot of mistakes and miss
 
 Image from the briefing from Miss Eunseo.
 
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201724141-5c0345fa-1615-446c-896d-b3531cfc36d5.png)
+
+```html
+<!--
+       /$$                            /$$$$$$  /$$$$$$$$
+      | $$                           /$$__  $$|_____ $$/
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$     /$$/ 
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/    /$$/  
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/    /$$/   
+| $$  | $$ /$$__  $$| $$  | $$      | $$        /$$/    
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$ /$$/     
+ \_______/ \_______/ \____  $$      |________/|__/      
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Not much progress, i just add real time update for card title and description.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201724261-725dd4d3-d139-4e05-8709-b501de58c7e6.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/|  $$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/  >$$__  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$      | $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Not much progress again, i just add option that will become visible when i choose specific option.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201723931-26c39e8d-225c-41e6-a906-bf3b049edc4a.png)
 
 
-
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/|  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/  \____  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$       /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
+Working on editing image for the card. Add lot of state, make more option available. Sharing progress to each other. 
+Image for all available state in the card. I need to learn about react lazy or anything related to splitting code.
 
 
 
