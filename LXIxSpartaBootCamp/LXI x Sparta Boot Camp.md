@@ -705,7 +705,25 @@ Not much progress again, i just add option that will become visible when i choos
 Working on editing image for the card. Add lot of state, make more option available. Sharing progress to each other. 
 Image for all available state in the card. I need to learn about react lazy or anything related to splitting code.
 
+#
 
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/| $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$| $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+Still working on team project. I'm done with spell and trap card. Lot of repetitive code and hopefully i found better way to split it.
 
+i forgot to take a screenshot.
 
 
