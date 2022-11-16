@@ -726,4 +726,27 @@ Still working on team project. I'm done with spell and trap card. Lot of repetit
 
 i forgot to take a screenshot.
 
+#
 
+```html
+<!--
+       /$$                            /$$$$$$    /$$  
+      | $$                           /$$__  $$ /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|_  $$  
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/  | $$  
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$  | $$  
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$  | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/ /$$$$$$
+ \_______/ \_______/ \____  $$       \______/ |______/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/      
+-->
+```
+Still working on team project. Finally done with the most basic feature. Need to fix the font, small clipping image, footer text, and small bits that make the application closer to original source.
+
+We also have special session with Real developer from Sparta Coding Club, Ms Sangeon and Mr Aron. It is really amazing to hear their opinion, see stuff from their perspective about developer, how it started and many more.
+
+I forgot to take a screenshot.
+
+I'm doing well for repetitive task, positioning image, combining image. However lot of hardcode, really unflexible, load too much stuff at the same time. I really need to learn splitting stuff. But learning process is really slow. I hope i have more time.
