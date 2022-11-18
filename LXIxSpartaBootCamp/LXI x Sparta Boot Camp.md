@@ -640,11 +640,137 @@ Start with reviewing old exam questions. I think i made lot of mistakes and miss
 
 Image from the briefing from Miss Eunseo.
 
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201724141-5c0345fa-1615-446c-896d-b3531cfc36d5.png)
+
+```html
+<!--
+       /$$                            /$$$$$$  /$$$$$$$$
+      | $$                           /$$__  $$|_____ $$/
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$     /$$/ 
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/    /$$/  
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/    /$$/   
+| $$  | $$ /$$__  $$| $$  | $$      | $$        /$$/    
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$ /$$/     
+ \_______/ \_______/ \____  $$      |________/|__/      
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Not much progress, i just add real time update for card title and description.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201724261-725dd4d3-d139-4e05-8709-b501de58c7e6.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/|  $$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/  >$$__  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$      | $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Not much progress again, i just add option that will become visible when i choose specific option.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/201723931-26c39e8d-225c-41e6-a906-bf3b049edc4a.png)
 
 
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$        /$$$$$$/|  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$       /$$____/  \____  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$       /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$$|  $$$$$$/
+ \_______/ \_______/ \____  $$      |________/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
+Working on editing image for the card. Add lot of state, make more option available. Sharing progress to each other. 
+Image for all available state in the card. I need to learn about react lazy or anything related to splitting code.
 
+#
 
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/| $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$| $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+Still working on team project. I'm done with spell and trap card. Lot of repetitive code and hopefully i found better way to split it.
 
+i forgot to take a screenshot.
 
+#
 
+```html
+<!--
+       /$$                            /$$$$$$    /$$  
+      | $$                           /$$__  $$ /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|_  $$  
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/  | $$  
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$  | $$  
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$  | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/ /$$$$$$
+ \_______/ \_______/ \____  $$       \______/ |______/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/      
+-->
+```
+Still working on team project. Finally done with the most basic feature. Need to fix the font, small clipping image, footer text, and small bits that make the application closer to original source.
 
+We also have special session with Real developer from Sparta Coding Club, Ms Sangeon and Mr Aron. It is really amazing to hear their opinion, see stuff from their perspective about developer, how it started and many more.
+
+I forgot to take a screenshot.
+
+I'm doing well for repetitive task, positioning image, combining image. However lot of hardcode, really unflexible, load too much stuff at the same time. I really need to learn splitting stuff. But learning process is really slow. I hope i have more time.
+
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/  /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$ /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/| $$$$$$$$
+ \_______/ \_______/ \____  $$       \______/ |________/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+<--
+```
+Last day, we work as hard as we can but in the end we didn't finish it on time. But i feel better than before. At least we do our best and maybe we just pick hard one.
+
+Forgot to take images.
+
+Lot of evaluation from mentor. Lot of stuff to learn, like persist, use redux dev tools, splitting code.
+Manu amazing stuff from other team like video preview, using api, playing music, fake avatar, fake messages, character limit and many more.
