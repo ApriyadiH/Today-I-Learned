@@ -774,3 +774,33 @@ Forgot to take images.
 
 Lot of evaluation from mentor. Lot of stuff to learn, like persist, use redux dev tools, splitting code.
 Manu amazing stuff from other team like video preview, using api, playing music, fake avatar, fake messages, character limit and many more.
+
+#
+
+![mbti](https://user-images.githubusercontent.com/116085209/202745878-1ce8aaba-953b-48ec-9c12-701b47e12b35.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/   /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$  |___  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
+New week, new team member, and new task. After orientation we have mentoring session with Mr Justin. He is teaching Redux usual work flow, and many more. 
+
+i failed to follow it, but i will review more.
+
+Image from MBTI personality test. I think this is the 3rd time i take the test. Nothing much change so i think it should be accurate. Last time was INTP-T and then INFP-T. Now i'm back to INTP-T. The number change a bit, last time it was really dominant on one side, but this time it is more like to middle, around 40-50% on each side. This could be different in the future.
+
+
+
+
+
