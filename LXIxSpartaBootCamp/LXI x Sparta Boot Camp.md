@@ -800,7 +800,63 @@ i failed to follow it, but i will review more.
 
 Image from MBTI personality test. I think this is the 3rd time i take the test. Nothing much change so i think it should be accurate. Last time was INTP-T and then INFP-T. Now i'm back to INTP-T. The number change a bit, last time it was really dominant on one side, but this time it is more like to middle, around 40-50% on each side. This could be different in the future.
 
+#
 
+```html
+<!--
+       /$$                            /$$$$$$  /$$   /$$
+      | $$                           /$$__  $$| $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  | $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/| $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$      | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/      | $$
+ \_______/ \_______/ \____  $$       \______/       |__/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/   
+-->
+```
+We are supposed to learn node JS from video lectures, but i'm sick, so i'm sleeping for whole day. Trying to watch the lectures video but can't concentrate.
 
+# 
+```html
+<!--
+       /$$                            /$$$$$$  /$$$$$$$ 
+      | $$                           /$$__  $$| $$____/ 
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$      
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/| $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/     
+-->
+```
+Still sick, so not much progress.
+
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \__/
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/| $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$| $$__  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/         
+-->
+```
+No more fever but still coughing. I manage to catchup watching the whole video but don't try it on visual studio code.
+Today I'm working on team task. I will compile the answer when all of other question are answered. For my part i got schema design questions for mongoose. mostly related to embed and reference. Embed is basically nested array/object. Reference is id reference inside of an array. We should prioritize embed, but there are several case when reference is necessary. Like when the array keep growing, when we need to call the element inside the array. Mongo DB also talk about anti pattern which is basically what developer should avoid when they make a schema. 
+
+Not only that, we have mentoring sessions too. Although it is mentoring sessions it is more like random general information and free qna sessions. Other team member are asking about mongoDB (non-sql database) compared to Relational database management system. For reading joined table, RDBMS will be better. For searching resources, non sql will be faster. People need to choose one in the past and have one side slower. However in modern day, we may use microservice which combined several database and event combined several backend/server. It will cost more money since hosting server in cloud need money and sometimes 1 single backend (monolithic) will be cheaper.
 
 
