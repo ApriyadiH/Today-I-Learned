@@ -859,4 +859,23 @@ Today I'm working on team task. I will compile the answer when all of other ques
 
 Not only that, we have mentoring sessions too. Although it is mentoring sessions it is more like random general information and free qna sessions. Other team member are asking about mongoDB (non-sql database) compared to Relational database management system. For reading joined table, RDBMS will be better. For searching resources, non sql will be faster. People need to choose one in the past and have one side slower. However in modern day, we may use microservice which combined several database and event combined several backend/server. It will cost more money since hosting server in cloud need money and sometimes 1 single backend (monolithic) will be cheaper.
 
+#
 
+```html
+<!--
+       /$$                            /$$$$$$  /$$$$$$$$
+      | $$                           /$$__  $$|_____ $$/
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$     /$$/ 
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/    /$$/  
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$   /$$/   
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$  /$$/    
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/ /$$/     
+ \_______/ \_______/ \____  $$       \______/ |__/      
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/
+-->
+```
+Since we learned about nodejs or back-end, i kept looking for other stuff related to back-end instead of working with personal task. Team task already done and i just start downloading stuff based on lecture notes. It seems like python back end will be cooler than nodejs which simply connecting API. Not many logic other than CRUD from front-end to database. I wish it could be something cooler like OCR, image recognition, and many more. 
+
+No imagefor today. 
