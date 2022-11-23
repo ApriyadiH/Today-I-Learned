@@ -878,4 +878,25 @@ Not only that, we have mentoring sessions too. Although it is mentoring sessions
 ```
 Since we learned about nodejs or back-end, i kept looking for other stuff related to back-end instead of working with personal task. Team task already done and i just start downloading stuff based on lecture notes. It seems like python back end will be cooler than nodejs which simply connecting API. Not many logic other than CRUD from front-end to database. I wish it could be something cooler like OCR, image recognition, and many more. 
 
-No imagefor today. 
+No image for today. 
+
+# 
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/|  $$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$ >$$__  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/   
+-->
+```
+Working on personal task today, i had an issue with is unique feature. At first i try to use extra index for post schema. But then realize mongoDB already has default index so i remove that extra index. Later after testing, it will have error after i post 2nd data. First data posted succesfully. Thanksfully our group have mentoring section and Mr. Justin help me with that issue. After deleting it, the system assume my first data has extra index with null value since it also has "required". 2nd data also have null value for that extra index. Since i can't have 2 data with same extra index, mongoDB will reject the api.
+
+i forgot to take image screenshot for today. 
