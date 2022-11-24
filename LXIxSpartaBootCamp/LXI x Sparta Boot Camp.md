@@ -900,3 +900,25 @@ No image for today.
 Working on personal task today, i had an issue with is unique feature. At first i try to use extra index for post schema. But then realize mongoDB already has default index so i remove that extra index. Later after testing, it will have error after i post 2nd data. First data posted succesfully. Thanksfully our group have mentoring section and Mr. Justin help me with that issue. After deleting it, the system assume my first data has extra index with null value since it also has "required". 2nd data also have null value for that extra index. Since i can't have 2 data with same extra index, mongoDB will reject the api.
 
 i forgot to take image screenshot for today. 
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/203821282-272beb3d-9c42-4b2e-b188-e4523b72a261.png)
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      |__/  \ $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$         /$$$$$/|  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$        |___  $$ \____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Today is the last day for personal task and we also have mini test. I'm not really good for implementing bad request message. Deploying and connecting to mongoDB atlas is hard and confusing until Refido help me. Really amazing. 
+
