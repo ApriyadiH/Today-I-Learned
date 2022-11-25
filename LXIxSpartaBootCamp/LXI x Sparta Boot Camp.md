@@ -922,3 +922,26 @@ i forgot to take image screenshot for today.
 ```
 Today is the last day for personal task and we also have mini test. I'm not really good for implementing bad request message. Deploying and connecting to mongoDB atlas is hard and confusing until Refido help me. Really amazing. 
 
+#
+
+```html
+<!--
+       /$$                           /$$   /$$  /$$$$$$ 
+      | $$                          | $$  | $$ /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$| $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$| $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$| $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$            | $$| $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$|  $$$$$$/
+ \_______/ \_______/ \____  $$            |__/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/   
+-->
+```
+New week, week 7 begin. We just watching a lecture video together. Learn about basic javascript. Creating object, put a function inside an object, destructuring the object, hoisting, creating a class. Write an example of function in a class. Also error handling which i think is really important and exactly what i need. 
+
+ 
+
+
+
