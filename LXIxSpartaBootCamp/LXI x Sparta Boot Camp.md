@@ -941,7 +941,69 @@ Today is the last day for personal task and we also have mini test. I'm not real
 ```
 New week, week 7 begin. We just watching a lecture video together. Learn about basic javascript. Creating object, put a function inside an object, destructuring the object, hoisting, creating a class. Write an example of function in a class. Also error handling which i think is really important and exactly what i need. 
 
+ #
  
+```html
+<!--
+       /$$                           /$$   /$$   /$$  
+      | $$                          | $$  | $$ /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$|_  $$  
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$  | $$  
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$  | $$  
+| $$  | $$ /$$__  $$| $$  | $$            | $$  | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$ /$$$$$$
+ \_______/ \_______/ \____  $$            |__/|______/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/  
+-->
+```
 
+Saturday, learning lecture video. 
 
+#
+
+```html
+<!--
+       /$$                           /$$   /$$  /$$$$$$ 
+      | $$                          | $$  | $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$  /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$            | $$| $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$| $$$$$$$$
+ \_______/ \_______/ \____  $$            |__/|________/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
+
+Sunday, still studying.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/204328198-22445794-165a-4eb2-88d0-a850ce1ba7d1.png)
+
+```html
+<!--
+       /$$                           /$$   /$$  /$$$$$$ 
+      | $$                          | $$  | $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$   /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$  |___  $$
+| $$  | $$ /$$__  $$| $$  | $$            | $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$|  $$$$$$/
+ \_______/ \_______/ \____  $$            |__/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+
+We are working on our team task. Still studying and we are having sharing session, discussing our answer. Seems like i'm doing good except for 2nd question. Not really sure why i got half point. 
+
+Image from sharing sessions when everyone already return to their own space.
+
+#
 
