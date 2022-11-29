@@ -1007,3 +1007,19 @@ Image from sharing sessions when everyone already return to their own space.
 
 #
 
+```html
+<!--
+       /$$                           /$$   /$$ /$$   /$$
+      | $$                          | $$  | $$| $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$| $$  | $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$| $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$            | $$      | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$      | $$
+ \_______/ \_______/ \____  $$            |__/      |__/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+Working on personal notes and personal task. Forgot to take an image. Not much progress for this day since i'm mostly working on notes or catching up past lecture notes.
