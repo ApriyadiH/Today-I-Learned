@@ -1,5 +1,5 @@
-```
- <!--
+```html
+<!--
  /$$$$$$$                                  /$$
 | $$__  $$                                | $$
 | $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$$ /$$$$$$
@@ -579,23 +579,6 @@ export default App;
 
 ```html
 <!--
- /$$$$$$$                        /$$                                 /$$$$$$$                         
-| $$__  $$                      | $$                                | $$__  $$                        
-| $$  \ $$  /$$$$$$  /$$   /$$ /$$$$$$    /$$$$$$   /$$$$$$         | $$  \ $$  /$$$$$$  /$$$$$$/$$$$ 
-| $$$$$$$/ /$$__  $$| $$  | $$|_  $$_/   /$$__  $$ /$$__  $$ /$$$$$$| $$  | $$ /$$__  $$| $$_  $$_  $$
-| $$__  $$| $$  \ $$| $$  | $$  | $$    | $$$$$$$$| $$  \__/|______/| $$  | $$| $$  \ $$| $$ \ $$ \ $$
-| $$  \ $$| $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$              | $$  | $$| $$  | $$| $$ | $$ | $$
-| $$  | $$|  $$$$$$/|  $$$$$$/  |  $$$$/|  $$$$$$$| $$              | $$$$$$$/|  $$$$$$/| $$ | $$ | $$
-|__/  |__/ \______/  \______/    \___/   \_______/|__/              |_______/  \______/ |__/ |__/ |__/
--->
-```
-
-# React-Dom
-
-#
-
-```html
-<!--
  /$$$$$$$                  /$$                    
 | $$__  $$                | $$                    
 | $$  \ $$  /$$$$$$   /$$$$$$$ /$$   /$$ /$$   /$$
@@ -643,22 +626,24 @@ import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-
-// Tambahkan pembungkus Provider dan letakkan App di dalam.
+  // Tambahkan pembungkus Provider dan letakkan App di dalam.
   <Provider store={store}>
     <App />
   </Provider>
+);
+
+reportWebVitals();
 ```
 
 7. Persiapan selesai, tambahkan module sesuai kebutuhan di modules (baca bagian selanjutnya).
 8. Jangan lupa tambahkan baris kode baru modules ke configStore.js
 
 ```jsx
-// tambah diatas
+// tambah di configStore.js
 import namaModules from "../modules/namaModules";
 
 const rootReducer = combineReducers({
-  yg_dikirim: namaModules, // <-- ubah di rootreducer
+  yg_dikirim: namaFungsi, // <-- ubah di rootreducer
 });
 const store = createStore(rootReducer);
 ```
@@ -668,7 +653,18 @@ const store = createStore(rootReducer);
 # Module
 
 ```jsx
+// Action
+// Bisa dikopas kalau ada beberapa action
+const NAMA_ACTION = "NAMA_ACTION";
+
+// Action Creator
+// Bisa dikopas kalau ada beberapa action
+export const namaAction = (payload) => {
+  return { type: NAMA_ACTION, payload };
+};
+
 // State awal
+// Pakai salah satu aja
 const stateAwalBiasa = 0;
 const stateAwalArray = [0];
 const stateAwalObjek = {
@@ -676,10 +672,18 @@ const stateAwalObjek = {
   name: "Ayam Goreng",
 };
 
-// reducer
+// Reducer
 // Semacam fungsi gitu deh
 const namaFungsi = (state = stateAwal, action) => {
   switch (action.type) {
+    case NAMA_ACTION:
+      // disini isi logikanya
+      return {
+        // return hasilnya
+        ...state,
+        objek_di_array: informasi_baru,
+      };
+
     default:
       return state;
   }
@@ -689,20 +693,633 @@ const namaFungsi = (state = stateAwal, action) => {
 export default namaFungsi;
 ```
 
+#
+
+# Selector & Dispatch
+
+Selector ngambil state dari store, dispatch buat ngirim state ke store.
+
+```jsx
+//Jgn lupa impor
+import { useDispatch, useSelector } from "react-redux";
+import { namaModule } from "../redux/modules/namaFileModule";
+
+// Contoh selector
+const nama_selector = useSelector(
+  (state) => state.namaSlices.objectDiDalamState
+);
+
+// Contoh Dispatch
+const dispatch = useDispatch();
+
+// Dispatch biasanya dijalankan dengan useEffect atau onChange atau onClick
+function onClickHandler(id) {
+  dispatch(
+    namaAction({
+      // informasi yang dikirim
+      id,
+      ayam: "ayam",
+    })
+  );
+}
+```
+
+#
+
 ```html
 <!--
-       /$$                     /$$                    
-      | $$                    | $$                    
-  /$$$$$$$  /$$$$$$   /$$$$$$ | $$  /$$$$$$  /$$   /$$
- /$$__  $$ /$$__  $$ /$$__  $$| $$ /$$__  $$| $$  | $$
-| $$  | $$| $$$$$$$$| $$  \ $$| $$| $$  \ $$| $$  | $$
-| $$  | $$| $$_____/| $$  | $$| $$| $$  | $$| $$  | $$
-|  $$$$$$$|  $$$$$$$| $$$$$$$/| $$|  $$$$$$/|  $$$$$$$
- \_______/ \_______/| $$____/ |__/ \______/  \____  $$
-                    | $$                     /$$  | $$
-                    | $$                    |  $$$$$$/
-                    |__/                     \______/   
+ /$$$$$$$                        /$$                                 /$$$$$$$                         
+| $$__  $$                      | $$                                | $$__  $$                        
+| $$  \ $$  /$$$$$$  /$$   /$$ /$$$$$$    /$$$$$$   /$$$$$$         | $$  \ $$  /$$$$$$  /$$$$$$/$$$$ 
+| $$$$$$$/ /$$__  $$| $$  | $$|_  $$_/   /$$__  $$ /$$__  $$ /$$$$$$| $$  | $$ /$$__  $$| $$_  $$_  $$
+| $$__  $$| $$  \ $$| $$  | $$  | $$    | $$$$$$$$| $$  \__/|______/| $$  | $$| $$  \ $$| $$ \ $$ \ $$
+| $$  \ $$| $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$              | $$  | $$| $$  | $$| $$ | $$ | $$
+| $$  | $$|  $$$$$$/|  $$$$$$/  |  $$$$/|  $$$$$$$| $$              | $$$$$$$/|  $$$$$$/| $$ | $$ | $$
+|__/  |__/ \______/  \______/    \___/   \_______/|__/              |_______/  \______/ |__/ |__/ |__/
 -->
 ```
 
-# Deploy
+# React-Dom
+
+bisa pakai router di react, router itu semacam fitur untuk membuat SPA menjadi seperti multipage berdasarkan url. Mempermudah navigasi pengguna juga.
+
+# Persiapan
+
+1. Install dulu
+
+```jsx
+yarn add react-router-dom
+```
+
+2. bikin folder "shared" di src dan tambahkan file "Router.js"
+
+```jsx
+import React from "react";
+// Selain BrowserRouter bisa juga pakai HashRouter
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// Tambahkan pages lainnya sesuai kebutuhan
+import NamaPages from "../pages/NamaPages";
+import NamaPages2 from "../pages/NamaPages2";
+
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<NamaPages />} />
+        <Route path="apaaja" element={<NamaPages2 />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default Router;
+```
+
+3. Ganti "App.js"
+
+```jsx
+import React from "react";
+import Router from "./shared/Router";
+
+function App() {
+  return <Router />;
+}
+
+export default App;
+```
+
+#
+
+Hooks khusus React-router-dom
+
+1. useNavigate
+
+```jsx
+import { useNavigate } from "react-router-dom";
+
+const Ayam = () => {
+  // Declare useNavigate
+  const navigate = useNavigate();
+
+  return (
+    // Bisa pindah2 halaman dgn useNavigate
+    <button
+      onClick={() => {
+        navigate("/Goreng");
+      }}
+    >
+      Move to Goreng
+    </button>
+  );
+};
+
+export default Ayam;
+```
+
+2. useParam
+
+```jsx
+// Di shared/Router.js url bisa memberikan parameter
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/*Parameter id akan digunakan sebagai parameter*/}
+        <Route path="/:id" element={<Goreng />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default Router;
+```
+
+```jsx
+// Di halaman Goreng parameter dapat digunakan
+import { useParams } from "react-router-dom";
+
+const Goreng = () => {
+  // useParams berguna untuk mengambil data parameter dari url
+  const param = useParams();
+  console.log(param);
+  return <div>Goreng</div>;
+};
+
+export default Goreng;
+```
+
+3. useLocation
+
+```jsx
+import { useLocation } from "react-router-dom";
+
+const Ayam = () => {
+  // Declare useLocation
+  const location = useLocation();
+  // bisa Mencari tahu lokasi saat ini
+  console.log("location :>> ", location);
+  return (
+    <div>
+      <p>Ayam</p>
+    </div>
+  );
+};
+
+export default Ayam;
+```
+
+4. Links
+
+```jsx
+import { Link } from "react-router-dom";
+
+const Ayam = () => {
+  // Mirip dengan useNavigate untuk berpindah halaman. Tetapi ini digunakan untuk mengantikan <a> karena hyperlink akan me-refresh halaman dan tidak diinginkan di aplikasi SPA.
+  return <Link to="/Goreng">Goreng</Link>;
+};
+
+export default App;
+```
+
+#
+
+```html
+<!--
+ /$$$$$$$                  /$$                           /$$$$$$$$                  /$$ /$$       /$$   /$$    
+| $$__  $$                | $$                          |__  $$__/                 | $$| $$      |__/  | $$    
+| $$  \ $$  /$$$$$$   /$$$$$$$ /$$   /$$ /$$   /$$         | $$  /$$$$$$   /$$$$$$ | $$| $$   /$$ /$$ /$$$$$$  
+| $$$$$$$/ /$$__  $$ /$$__  $$| $$  | $$|  $$ /$$/         | $$ /$$__  $$ /$$__  $$| $$| $$  /$$/| $$|_  $$_/  
+| $$__  $$| $$$$$$$$| $$  | $$| $$  | $$ \  $$$$/          | $$| $$  \ $$| $$  \ $$| $$| $$$$$$/ | $$  | $$    
+| $$  \ $$| $$_____/| $$  | $$| $$  | $$  >$$  $$          | $$| $$  | $$| $$  | $$| $$| $$_  $$ | $$  | $$ /$$
+| $$  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$/ /$$/\  $$         | $$|  $$$$$$/|  $$$$$$/| $$| $$ \  $$| $$  |  $$$$/
+|__/  |__/ \_______/ \_______/ \______/ |__/  \__/         |__/ \______/  \______/ |__/|__/  \__/|__/   \___/  
+-->
+```
+
+# Redux Toolkit
+
+Merombak Store, module dan dapat menggunakan Redux Development Toolkit.
+Development Toolkit akan sangat membantu dalam proses pengembangan, dapat melihat nilai state yang ada saat pengujian.
+
+# Persiapan
+
+1. install dulu
+
+```jsx
+yarn add react-redux @reduxjs/toolkit
+```
+
+2. conFigStore dan Modules(module akan disebut Slices) akan berubah. Jadi nggak pakai action, action creater.
+
+Yang berubah di Modules. nama File akan diakhiri Slices biasanya.
+
+```jsx
+import { createSlice } from "@reduxjs/toolkit";
+
+// Initial State
+const initialState = {
+  comments: [
+    {
+      card_id: "1",
+      comment_id: "1",
+      name: "userX01",
+      comment: "Hahahaha!!!!",
+    },
+  ],
+};
+
+const commentsSlice = createSlice({
+  name: "comments",
+  initialState,
+  reducers: {
+    addcomment: (state, action) => {
+      return {
+        ...state,
+        comments: [
+          ...state.comments,
+          {
+            card_id: action.payload.card_id,
+            comment_id: action.payload.comment_id,
+            name: action.payload.name,
+            comment: action.payload.comment,
+          },
+        ],
+      };
+    },
+  },
+});
+
+export const { addcomment } = commentsSlice.actions;
+export default commentsSlice.reducer;
+```
+
+Perubahan di configStore.js
+
+```jsx
+import { configureStore } from "@reduxjs/toolkit";
+import cardsSlices from "../modules/cardsSlices";
+import commentsSlices from "../modules/commentsSlices";
+
+const store = configureStore({
+  reducer: { cards: cardsSlices.reducer, comments: commentsSlices },
+});
+
+export default store;
+```
+
+3. Install Extension atau Plug-in Redux Dev Tools, inspect element, cari Components, Profiler, dll.
+
+4. Selesai deh
+
+#
+
+```html
+<!--
+                                                /$$$$$$                                                   
+                                               /$$__  $$                                                  
+       /$$  /$$$$$$$  /$$$$$$  /$$$$$$$       | $$  \__/  /$$$$$$   /$$$$$$  /$$    /$$ /$$$$$$   /$$$$$$ 
+      |__/ /$$_____/ /$$__  $$| $$__  $$      |  $$$$$$  /$$__  $$ /$$__  $$|  $$  /$$//$$__  $$ /$$__  $$
+       /$$|  $$$$$$ | $$  \ $$| $$  \ $$       \____  $$| $$$$$$$$| $$  \__/ \  $$/$$/| $$$$$$$$| $$  \__/
+      | $$ \____  $$| $$  | $$| $$  | $$       /$$  \ $$| $$_____/| $$        \  $$$/ | $$_____/| $$      
+      | $$ /$$$$$$$/|  $$$$$$/| $$  | $$      |  $$$$$$/|  $$$$$$$| $$         \  $/  |  $$$$$$$| $$      
+      | $$|_______/  \______/ |__/  |__/       \______/  \_______/|__/          \_/    \_______/|__/      
+ /$$  | $$                                                                                                
+|  $$$$$$/                                                                                                
+ \______/  
+-->
+```
+
+# Json Server
+
+Membuat API sementara dan berguna untuk uji coba komunikasi menyambungkan front-end dengan back-end.
+
+# Persiapan
+
+1. Bikin di folder terpisah, nanti di deploy terpisah juga
+
+2. Install dulu
+
+```
+yarn add json-server
+```
+
+3. Jalankan servernya
+
+```
+yarn json-server --watch db.json --port 3001
+```
+
+4. Folder db.json akan muncul dan bisa ditambahkan json di dalamnya.
+
+```
+{
+  "ayam": [
+    {
+      "id": 1,
+      "title": "ayam goreng",
+    }
+  ]
+}
+```
+
+5. Kemudian di deploy... karena heroku ud nggak gratis, ditampung dulu...
+
+#
+
+```html
+<!--
+  /$$$$$$            /$$                    
+ /$$__  $$          |__/                    
+| $$  \ $$ /$$   /$$ /$$  /$$$$$$   /$$$$$$$
+| $$$$$$$$|  $$ /$$/| $$ /$$__  $$ /$$_____/
+| $$__  $$ \  $$$$/ | $$| $$  \ $$|  $$$$$$ 
+| $$  | $$  >$$  $$ | $$| $$  | $$ \____  $$
+| $$  | $$ /$$/\  $$| $$|  $$$$$$/ /$$$$$$$/
+|__/  |__/|__/  \__/|__/ \______/ |_______/ 
+-->
+```
+
+# Axios
+
+untuk berkomunikasi dengan protokol https dengan server. Dalam keberjalanannya Axios biasanya digabung dengan middleware misalnya thunk.
+
+Install dulu
+
+```jsx
+yarn add axios
+```
+
+# Cara Pakai
+
+1. GET
+
+```jsx
+// src/App.js
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+const GetAyam = () => {
+  const [ayam, setAyam] = useState(null);
+
+  const fetchAyam = async () => {
+    // Ngambil data dari jsonserver, lalu disimpan dalam state ayam
+    const { data } = await axios.get("http://localhost:3001/ayam");
+    setAyam(data);
+  };
+
+  useEffect(() => {
+    fetchAyam();
+  }, []);
+
+  return <div>Apa aja</div>;
+};
+
+export default GetAyam;
+```
+
+2. POST
+
+```jsx
+// src/App.jsx
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+const PostAyam = () => {
+  // state sementara untuk menampung data inputan
+  const [ayambaru, setAyamBaru] = useState({
+    title: "",
+  });
+
+  // ini data yang ada di json server
+  const [ayam, setAyam] = useState(null);
+
+  const fetchAyam = async () => {
+    const { data } = await axios.get("http://localhost:3001/ayam");
+    setAyam(data);
+  };
+
+  const onSubmitHandler = (ayambaru) => {
+    axios.post("http://localhost:3001/ayam", ayambaru);
+  };
+
+  useEffect(() => {
+    fetchAyam();
+  }, []);
+
+  return (
+    <>
+      {/*Form untuk mengirim informasi terbaru*/}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSubmitHandler(ayambaru);
+        }}
+      >
+        <input
+          type="text"
+          onChange={(ev) => {
+            const { value } = ev.target;
+            setAyamBaru({
+              ...ayambaru,
+              title: value,
+            });
+          }}
+        />
+        <button>Add</button>
+      </form>
+      {/*ini menampilkan apa yang ada dari json server*/}
+      <div>
+        {ayam.map((isi_ayam) => (
+          <div key={isi_ayam.id}>{isi_ayam.title}</div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default PostAyam;
+```
+
+3. DELETE
+
+```jsx
+// Tambahkan baris kode ini seperti diatas
+const onClickDeleteButtonHandler = (ayamId) => {
+  axios.delete(`http://localhost:3001/ayam/${ayamId}`);
+};
+```
+
+4. PATCH
+
+```jsx
+// Tambajkan baris kode ini seperti datas
+// edit berisi informasi yang diubah, dalam kasus ini yang diubah adalah title.
+const onClickEditButtonHandler = (ayamId, edit) => {
+  axios.patch(`http://localhost:3001/ayam/${ayamId}`, edit);
+};
+```
+
+#
+
+```html
+<!--
+ /$$$$$$$$ /$$                           /$$      
+|__  $$__/| $$                          | $$      
+   | $$   | $$$$$$$  /$$   /$$ /$$$$$$$ | $$   /$$
+   | $$   | $$__  $$| $$  | $$| $$__  $$| $$  /$$/
+   | $$   | $$  \ $$| $$  | $$| $$  \ $$| $$$$$$/ 
+   | $$   | $$  | $$| $$  | $$| $$  | $$| $$_  $$ 
+   | $$   | $$  | $$|  $$$$$$/| $$  | $$| $$ \  $$
+   |__/   |__/  |__/ \______/ |__/  |__/|__/  \__/
+-->
+```
+
+Middleware di Redux. Ditambahkan di Slices
+
+```jsx
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+
+// tambahkan bagian ini, disini contohnya akan ada timeout(jeda) 3 detik
+export const __namaModule = createAsyncThunk(
+  "namaModule",
+  (payload, thunkAPI) => {
+    setTimeout(() => {
+      thunkAPI.dispatch(namaModule(payload));
+    }, 3000);
+  }
+);
+
+const initialState = {};
+
+const namaSlice = createSlice({
+  name: "nama",
+  initialState,
+  reducers: {
+    namaModule: (state, action) => {
+      //Logika di module
+    },
+  },
+});
+
+export const { namaModule } = namaSlice.actions;
+export default namaSlice.reducer;
+```
+
+Yg di-dispatch jadi beda
+
+```jsx
+import { useDispatch } from "react-redux";
+import { __namaModule } from "./redux/modules/namaSlice";
+
+const Ayam = () => {
+  const dispatch = useDispatch();
+
+  // Sesuai dengan yang ada di thunk, akan dikirim number sebagai payload.
+  const onClickHandler = () => {
+    dispatch(__namaModule(number));
+  };
+
+  return <div>Ayam Goreng</div>;
+};
+
+export default Ayam;
+```
+
+#
+
+Gabungan Thunk dan Axios. Dalam keberjalanannya komunikasi antar front-end dengan server tidak berjalan mulus. Akan ada proses loading, dan mungkin saja komunikasi error. Sehingga umumnya digunakan try-catch untuk menanggulangi error.
+
+```jsx
+// ini di Slices
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
+
+const initialState = {
+  ayam: [],
+  isLoading: false,
+  error: null,
+};
+
+export const __getAyam = createAsyncThunk(
+  "ayam/getAyam",
+  async (payload, thunkAPI) => {
+    try {
+      const data = await axios.get("http://localhost:3001/ayam");
+      // console.log(data);
+      // fulfillWithValue berjalan ketika request berjalan lancar.
+      return thunkAPI.fulfillWithValue(data.data);
+    } catch (error) {
+      // console.log(error);
+      // rejectWithValue berjalan ketika request ditolak.
+      return thunkAPI.rejectWithValue(error);
+    }
+  }
+);
+
+export const ayamSlice = createSlice({
+  name: "ayam",
+  initialState,
+  reducers: {},
+  extraReducers: {
+    [__getAyam.pending]: (state) => {
+      state.isLoading = true; // Keadaan sedang loading
+    },
+    [__getAyam.fulfilled]: (state, action) => {
+      state.isLoading = false; // Ketika berhasil, loading bernilai false
+      state.Ayam = action.payload; // nilai dari payload dijadikan state di Store
+    },
+    [__getAyam.rejected]: (state, action) => {
+      state.isLoading = false; // Ketika gagal, loading bernilai false
+      state.error = action.payload; // nilai dari payload dijadikan nilai gagal di Store.
+    },
+  },
+});
+
+export const {} = ayamSlice.actions;
+export default ayamSlice.reducer;
+```
+
+Dipanggil di components
+
+```jsx
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { __getAyam } from "./redux/modules/ayamSlice";
+
+const AyamGoreng = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(__getAyam());
+  }, [dispatch]);
+
+  // Diberikan kondisi, kalau loading akan menampilkan Tulisan dibawah
+  if (isLoading) {
+    return <div>Loading....</div>;
+  }
+
+  // Kalau gagal akan menampilkan pesan gagal.
+  if (error) {
+    return <div>{error.message}</div>;
+  }
+
+  // Kalau tidak loading dan tidak gagal (berarti berhasil)
+  return <div>Berhasil</div>;
+};
+
+export default AyamGoreng;
+```
+
+#
+
+# Optimizing
+
+ntaran deh
+
+# Custom Hooks
+
+ntaran
+
+# Deploy ke Vercel
