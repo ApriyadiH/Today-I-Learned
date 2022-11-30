@@ -1023,3 +1023,26 @@ Image from sharing sessions when everyone already return to their own space.
 -->
 ```
 Working on personal notes and personal task. Forgot to take an image. Not much progress for this day since i'm mostly working on notes or catching up past lecture notes.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/204850324-7909a7e9-4de6-449e-8b43-6f8d0e9d7144.png)
+
+```html
+<!--
+       /$$                           /$$   /$$ /$$$$$$$ 
+      | $$                          | $$  | $$| $$____/ 
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$| $$      
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$| $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$            | $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$|  $$$$$$/
+ \_______/ \_______/ \____  $$            |__/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/   
+-->
+```
+Today I'm suppose to submit and finished personal task, but it is far from finished. 
+
+Image from other teammate who have finished most of the requirements.
