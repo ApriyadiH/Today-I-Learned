@@ -1046,3 +1046,22 @@ Working on personal notes and personal task. Forgot to take an image. Not much p
 Today I'm suppose to submit and finished personal task, but it is far from finished. 
 
 Image from other teammate who have finished most of the requirements.
+
+#
+
+```html
+<!--
+       /$$                           /$$   /$$  /$$$$$$ 
+      | $$                          | $$  | $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$| $$  \__/
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$| $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$| $$__  $$
+| $$  | $$ /$$__  $$| $$  | $$            | $$| $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$|  $$$$$$/
+ \_______/ \_______/ \____  $$            |__/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+Mini test today, quite stressful since i barely understand what we should do.
