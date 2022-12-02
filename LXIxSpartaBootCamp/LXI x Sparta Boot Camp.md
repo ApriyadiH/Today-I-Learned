@@ -1065,3 +1065,25 @@ Image from other teammate who have finished most of the requirements.
 -->
 ```
 Mini test today, quite stressful since i barely understand what we should do.
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/205337818-8a36f74b-96a4-4bf1-9f85-6fd521b7fff7.png)
+
+```html
+<!--
+       /$$                           /$$   /$$ /$$$$$$$$
+      | $$                          | $$  | $$|_____ $$/
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$     /$$/ 
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$    /$$/  
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$   /$$/   
+| $$  | $$ /$$__  $$| $$  | $$            | $$  /$$/    
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$ /$$/     
+ \_______/ \_______/ \____  $$            |__/|__/      
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
+We have mentoring sessions to review past node.js and another mentoring sessions with ERD and how to create a local database. AFter that orientation. New week just begin, we are supposed to continue past clone coding project. 
+
