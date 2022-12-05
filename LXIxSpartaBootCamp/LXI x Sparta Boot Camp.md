@@ -1087,3 +1087,70 @@ Mini test today, quite stressful since i barely understand what we should do.
 ```
 We have mentoring sessions to review past node.js and another mentoring sessions with ERD and how to create a local database. AFter that orientation. New week just begin, we are supposed to continue past clone coding project. 
 
+#
+
+```html
+<!--
+       /$$                           /$$   /$$  /$$$$$$ 
+      | $$                          | $$  | $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$|  $$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ >$$__  $$
+| $$  | $$ /$$__  $$| $$  | $$            | $$| $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$|  $$$$$$/
+ \_______/ \_______/ \____  $$            |__/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Working on Puppeteer and Reviewing. Then Discussing about web-scrapping with team mates.
+
+
+#
+
+```html
+<!--
+       /$$                           /$$   /$$  /$$$$$$ 
+      | $$                          | $$  | $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  | $$| $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$$|  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ \____  $$
+| $$  | $$ /$$__  $$| $$  | $$            | $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$            | $$|  $$$$$$/
+ \_______/ \_______/ \____  $$            |__/ \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/      
+-->
+```
+Still working on clone coding.
+
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/205686971-caf4d466-e9d9-4c66-8836-62ab865ddd9c.png)
+
+```html
+<!--
+       /$$                           /$$$$$$$   /$$$$$$ 
+      | $$                          | $$____/  /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      | $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ | $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$| $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/       
+-->
+```
+Still working on backend API. After the mentoring, we change our work. We are focusing more on Cart feature and no web-scrapping. But if we have enough time, we will try to implement more feature.
+
+For web-scrapping I'm using puppeteer, so far i only take text content, but after mentoring i learned the proper way like using it to take meta data or attribute. 
+
+
+
+
+
