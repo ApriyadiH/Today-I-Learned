@@ -1150,7 +1150,21 @@ Still working on backend API. After the mentoring, we change our work. We are fo
 
 For web-scrapping I'm using puppeteer, so far i only take text content, but after mentoring i learned the proper way like using it to take meta data or attribute. 
 
-
-
+```html
+<!--
+       /$$                           /$$$$$$$   /$$  
+      | $$                          | $$____/ /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$     |_  $$  
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$  | $$  
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ | $$  
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$//$$$$$$
+ \_______/ \_______/ \____  $$       \______/|______/
+                     /$$  | $$                       
+                    |  $$$$$$/                       
+                     \______/    
+-->
+```
+Working on clone coding. So far i'm succesfully collecting data with web-scrapping. However it isn't really automated or run as well as i thought. Lot of errors occur when i tried to run it. Like suddenly disconnected from mongoDB, webscrapping has time limit, or some strange error. I still don't know how to make an efficient web-scrapper.
 
 
