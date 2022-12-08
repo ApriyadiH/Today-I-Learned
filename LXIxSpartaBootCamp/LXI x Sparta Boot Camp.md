@@ -1167,4 +1167,20 @@ For web-scrapping I'm using puppeteer, so far i only take text content, but afte
 ```
 Working on clone coding. So far i'm succesfully collecting data with web-scrapping. However it isn't really automated or run as well as i thought. Lot of errors occur when i tried to run it. Like suddenly disconnected from mongoDB, webscrapping has time limit, or some strange error. I still don't know how to make an efficient web-scrapper.
 
+```html
+<!--
+       /$$                           /$$$$$$$   /$$$$$$ 
+      | $$                          | $$____/  /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      |__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$   /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/| $$$$$$$$
+ \_______/ \_______/ \____  $$       \______/ |________/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/   
+-->
+```
+Still Working on clone coding. Succesfully sned the data from components with payload and dispatch. We manage to show the recommendation list and details for each books. After mentoring sessions, I learned more about webscrapping. However I still have several problems implementing Webscrapping.
 
