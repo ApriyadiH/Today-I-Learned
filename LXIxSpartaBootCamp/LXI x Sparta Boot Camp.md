@@ -1182,5 +1182,39 @@ Working on clone coding. So far i'm succesfully collecting data with web-scrappi
                      \______/   
 -->
 ```
-Still Working on clone coding. Succesfully sned the data from components with payload and dispatch. We manage to show the recommendation list and details for each books. After mentoring sessions, I learned more about webscrapping. However I still have several problems implementing Webscrapping.
+Still Working on clone coding. Succesfully send the data from components with payload and dispatch. We manage to show the recommendation list and details for each books. After mentoring sessions, I learned more about webscrapping. However I still have several problems implementing Webscrapping.
 
+```html
+<!--
+       /$$                           /$$$$$$$   /$$$$$$ 
+      | $$                          | $$____/  /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      |__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$    /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$  |___  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/             
+-->
+```
+Today is the last day and presentation day. Lot of amazing project from other people. Like that Youtube clone. But I think our team tried our best. Faris is really good with UI, Annisa works without resting, Refido managing github and server. Meanwhile i worked on unrelated webscrapping. It isn't complete at the end and i work more with connecting API and debugging.
+
+
+```html
+<!--
+       /$$                           /$$$$$$$  /$$   /$$
+      | $$                          | $$____/ | $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      | $$  | $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ | $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$      | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/      | $$
+ \_______/ \_______/ \____  $$       \______/       |__/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+Mentoring sessions, how to store jsonWebtoken in local storage. Mentor Justin told us to avoid storing jwt in coookies since it is an old method and not good for multiple device login and mobile doesn't have cookies feature. Also from other questions i learned the difference between axios in store and in component. From past project we only implement axios fetch in store while it will be better to store it in component state directly. From Mentor Adhitya we review past week lesson, useMemo. Also some theory like REST vs gRPC vs GraphQL.
