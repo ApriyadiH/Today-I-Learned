@@ -1218,3 +1218,61 @@ Today is the last day and presentation day. Lot of amazing project from other pe
 -->
 ```
 Mentoring sessions, how to store jsonWebtoken in local storage. Mentor Justin told us to avoid storing jwt in coookies since it is an old method and not good for multiple device login and mobile doesn't have cookies feature. Also from other questions i learned the difference between axios in store and in component. From past project we only implement axios fetch in store while it will be better to store it in component state directly. From Mentor Adhitya we review past week lesson, useMemo. Also some theory like REST vs gRPC vs GraphQL.
+
+#
+
+```html
+<!--
+       /$$                           /$$$$$$$  /$$$$$$$ 
+      | $$                          | $$____/ | $$____/ 
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      | $$      
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ | $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/  
+-->
+```
+Nothing happen. No task, no reviewing.
+
+#
+
+```html
+<!--
+       /$$                           /$$$$$$$   /$$$$$$ 
+      | $$                          | $$____/  /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      | $$  \__/
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ | $$$$$$$ 
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$| $$__  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/   
+-->
+```
+Same like yesterday
+
+#
+
+![image](https://user-images.githubusercontent.com/116085209/207042553-bb1f4364-9173-4f80-b80c-2c550d8506eb.png)
+
+```htnl
+<~-
+       /$$                           /$$$$$$$ /$$$$$$$$
+      | $$                          | $$____/|_____ $$/
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$          /$$/ 
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$    /$$/  
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$  /$$/   
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$/    
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$//$$/     
+ \_______/ \_______/ \____  $$       \______/|__/      
+                     /$$  | $$                         
+                    |  $$$$$$/                         
+                     \______/   
+-->
+```
