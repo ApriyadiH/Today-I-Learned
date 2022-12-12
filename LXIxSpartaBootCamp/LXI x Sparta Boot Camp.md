@@ -1276,3 +1276,4 @@ Same like yesterday
                      \______/   
 -->
 ```
+New Week, we are starts our focus time with orientation. After that we are wokring on Wire frame and design our webpage. I think our project this time isn't that difficult but it has decent amount of pages and everyone in our team aren't from programming background.
