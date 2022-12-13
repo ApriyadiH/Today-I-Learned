@@ -1277,3 +1277,22 @@ Same like yesterday
 -->
 ```
 New Week, we are starts our focus time with orientation. After that we are wokring on Wire frame and design our webpage. I think our project this time isn't that difficult but it has decent amount of pages and everyone in our team aren't from programming background.
+
+#
+
+```html
+<!--
+       /$$                           /$$$$$$$   /$$$$$$ 
+      | $$                          | $$____/  /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      | $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ |  $$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ >$$__  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$| $$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/ 
+-->
+```
+Working on user interface and bakc end. I learned how to use bootstrap in react, how to make basic template for react app, create router, and get used more to basic github. 
