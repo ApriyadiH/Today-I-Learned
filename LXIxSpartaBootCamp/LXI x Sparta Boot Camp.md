@@ -1296,3 +1296,22 @@ New Week, we are starts our focus time with orientation. After that we are wokri
 -->
 ```
 Working on user interface and bakc end. I learned how to use bootstrap in react, how to make basic template for react app, create router, and get used more to basic github. 
+
+#
+
+```html
+<!--
+       /$$                           /$$$$$$$   /$$$$$$ 
+      | $$                          | $$____/  /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$      | $$  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ |  $$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$      |_____  $$ \____  $$
+| $$  | $$ /$$__  $$| $$  | $$       /$$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Done with user interface, but it is still not working, tomorrow i will working on axios, interface logic.
