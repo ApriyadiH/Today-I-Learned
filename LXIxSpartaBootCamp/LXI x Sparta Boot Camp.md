@@ -1315,3 +1315,42 @@ Working on user interface and bakc end. I learned how to use bootstrap in react,
 -->
 ```
 Done with user interface, but it is still not working, tomorrow i will working on axios, interface logic.
+
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \__/| $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ | $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$      | $$__  $$| $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$      | $$  \ $$| $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/      
+-->
+```
+Bootstrap grid system is really good for responsiveness. Done with fixing list by rating pages with responsiveness and neat UI.
+
+# 
+
+```html
+<!--
+       /$$                            /$$$$$$    /$$  
+      | $$                           /$$__  $$ /$$$$  
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \__/|_  $$  
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$   | $$  
+| $$  | $$  /$$$$$$$| $$  | $$      | $$__  $$  | $$  
+| $$  | $$ /$$__  $$| $$  | $$      | $$  \ $$  | $$  
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/ /$$$$$$
+ \_______/ \_______/ \____  $$       \______/ |______/
+                     /$$  | $$                        
+                    |  $$$$$$/                        
+                     \______/      
+-->
+```
+Today we are supposed to have presentation, however the mentor didn't come. Our group haven't finished our front-end too.
+ 
