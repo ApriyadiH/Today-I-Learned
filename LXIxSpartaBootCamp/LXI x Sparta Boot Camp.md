@@ -1354,3 +1354,59 @@ Bootstrap grid system is really good for responsiveness. Done with fixing list b
 ```
 Today we are supposed to have presentation, however the mentor didn't come. Our group haven't finished our front-end too.
  
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \__/|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$   /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      | $$__  $$ /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$      | $$  \ $$| $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/| $$$$$$$$
+ \_______/ \_______/ \____  $$       \______/ |________/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/     
+-->
+```
+Saturday, looking for a way to deploy back-end application without AWS. Fixing some front-end interface, make it responsive, word break, and allipsis.
+
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \__/|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$    /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$      | $$__  $$  |___  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$  \ $$ /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/                 
+-->
+```
+Sunday, back-end application deployed, but have several issue like no .gitignore. Not much progress for another front-end page.
+
+#
+
+```html
+<!--
+       /$$                            /$$$$$$  /$$   /$$
+      | $$                           /$$__  $$| $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \__/| $$  | $$
+ /$$__  $$ |____  $$| $$  | $$      | $$$$$$$ | $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$      | $$__  $$|_____  $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$  \ $$      | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/      | $$
+ \_______/ \_______/ \____  $$       \______/       |__/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/    
+-->
+```
+Together with teammate working on API design, fixing deploying issue with teammate. Working on login feature for back-end.
