@@ -287,7 +287,7 @@ const express = require("express");
 const router = express.Router();
 
 // Import Schemas
-const Ayam = require("../schemas/Ayam");
+const DokAyam = require("../schemas/Ayam");
 
 router.get("/test", (req, res) => {
   res.send("ini sekedar buat ngetest kalau sudah tersambung");

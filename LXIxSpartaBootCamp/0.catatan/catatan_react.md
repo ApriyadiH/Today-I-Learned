@@ -643,7 +643,7 @@ reportWebVitals();
 import namaModules from "../modules/namaModules";
 
 const rootReducer = combineReducers({
-  yg_dikirim: namaFungsi, // <-- ubah di rootreducer
+  yg_dikirim: namaModules, // <-- ubah di rootreducer
 });
 const store = createStore(rootReducer);
 ```
