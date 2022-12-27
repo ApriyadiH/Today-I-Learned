@@ -1546,7 +1546,27 @@ Monday. Working on wireframe, deploying basic feature for react app and express 
 
 This final project, our group choose to do small stuff and prioritize understanding, sharing knowledge to each other. So i share my knowledge about preparing repository. Hopefully our goal isn't too small.
 
-
+#
+```html
+<!--
+       /$$                           /$$$$$$$$ /$$$$$$ 
+      | $$                          |_____ $$//$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$           /$$/|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$          /$$/   /$$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$         /$$/   /$$____/ 
+| $$  | $$ /$$__  $$| $$  | $$        /$$/   | $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$/    | $$$$$$$$
+ \_______/ \_______/ \____  $$      |__/     |________/
+                     /$$  | $$                         
+                    |  $$$$$$/                         
+                     \______/          
+-->
+```
+2022 Dec 27, Tuesday. 
+- Done preparation for slices, pages, components for front-end. 
+- Implementing basic map feature with leaflet.
+- Failed to finished API design and ERD/Schema Design ( I will fix it tomorrow)
+- Get lot of feedback from mentor Justin and Miss Eunseo. Like time management, user's privacy, extra review/report after the blood donor finished, multiple filter for interactive map, chatting feature for better user privacy.
 
 
 
