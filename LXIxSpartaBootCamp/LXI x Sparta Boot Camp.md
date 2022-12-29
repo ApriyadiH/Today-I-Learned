@@ -1568,9 +1568,27 @@ This final project, our group choose to do small stuff and prioritize understand
 - Failed to finished API design and ERD/Schema Design ( I will fix it tomorrow)
 - Get lot of feedback from mentor Justin and Miss Eunseo. Like time management, user's privacy, extra review/report after the blood donor finished, multiple filter for interactive map, chatting feature for better user privacy.
 
+#
 
-
-
+```html
+<!--
+       /$$                           /$$$$$$$$ /$$$$$$ 
+      | $$                          |_____ $$//$$__  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$           /$$/|__/  \ $$
+ /$$__  $$ |____  $$| $$  | $$          /$$/    /$$$$$/
+| $$  | $$  /$$$$$$$| $$  | $$         /$$/    |___  $$
+| $$  | $$ /$$__  $$| $$  | $$        /$$/    /$$  \ $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$/    |  $$$$$$/
+ \_______/ \_______/ \____  $$      |__/      \______/ 
+                     /$$  | $$                         
+                    |  $$$$$$/                         
+                     \______/    
+-->
+```
+2022 Dec 28, Wednesday.
+- Looking for chatting app library, found socket.io.
+- Looking for social login, and google has oauth.
+- Helping teammate implementing minimap, not finished and seems like leaflet documentation isn't complete.
 
 
 
