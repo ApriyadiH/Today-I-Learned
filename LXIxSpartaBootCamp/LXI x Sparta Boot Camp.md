@@ -1590,7 +1590,27 @@ This final project, our group choose to do small stuff and prioritize understand
 - Looking for social login, and google has oauth.
 - Helping teammate implementing minimap, not finished and seems like leaflet documentation isn't complete.
 
+#
 
+```html
+<!--
+       /$$                           /$$$$$$$$ /$$   /$$
+      | $$                          |_____ $$/| $$  | $$
+  /$$$$$$$  /$$$$$$  /$$   /$$           /$$/ | $$  | $$
+ /$$__  $$ |____  $$| $$  | $$          /$$/  | $$$$$$$$
+| $$  | $$  /$$$$$$$| $$  | $$         /$$/   |_____  $$
+| $$  | $$ /$$__  $$| $$  | $$        /$$/          | $$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$/           | $$
+ \_______/ \_______/ \____  $$      |__/            |__/
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/     
+-->
+```
+2022 Dec 29, Thursday.
+- Fixing minimap, but it is still not connected.
+- Working on main page interface.
+- learn about different styling when activating button/hover with styled components.
 
 
 
