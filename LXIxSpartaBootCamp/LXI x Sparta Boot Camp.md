@@ -1612,6 +1612,25 @@ This final project, our group choose to do small stuff and prioritize understand
 - Working on main page interface.
 - learn about different styling when activating button/hover with styled components.
 
+#
 
-
+```html
+<!--
+       /$$                           /$$$$$$$$ /$$$$$$$       
+      | $$                          |_____ $$/| $$____/       
+  /$$$$$$$  /$$$$$$  /$$   /$$           /$$/ | $$            
+ /$$__  $$ |____  $$| $$  | $$          /$$/  | $$$$$$$       
+| $$  | $$  /$$$$$$$| $$  | $$         /$$/   |_____  $$      
+| $$  | $$ /$$__  $$| $$  | $$        /$$/     /$$  \ $$      
+|  $$$$$$$|  $$$$$$$|  $$$$$$$       /$$/     |  $$$$$$/      
+ \_______/ \_______/ \____  $$      |__/       \______/       
+                     /$$  | $$                                
+                    |  $$$$$$/                                
+                     \______/    
+-->
+```
+2022 Dec 30, Friday.
+- Fixing repository.
+- working on live chat. But it only works for Http, while vercel and github use https.
+- Looking for SSL related stuff.
 
