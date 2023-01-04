@@ -1712,3 +1712,25 @@ This final project, our group choose to do small stuff and prioritize understand
 2023 jan 03, Tuesday.
 - After lot of reference, I need third party provider for live chat server. Vercel only run on serverless and doesn't have websocket. For now I use pusher but mentor gives a suggestion for alternative like firebase.
 - Messages are transffered sometimes. But sometimes didn't work but I don't understand why it behave like that. 
+
+#
+
+```html
+<!--
+       /$$                            /$$$$$$   /$$$$$$ 
+      | $$                           /$$__  $$ /$$$_  $$
+  /$$$$$$$  /$$$$$$  /$$   /$$      | $$  \ $$| $$$$\ $$
+ /$$__  $$ |____  $$| $$  | $$      |  $$$$$$/| $$ $$ $$
+| $$  | $$  /$$$$$$$| $$  | $$       >$$__  $$| $$\ $$$$
+| $$  | $$ /$$__  $$| $$  | $$      | $$  \ $$| $$ \ $$$
+|  $$$$$$$|  $$$$$$$|  $$$$$$$      |  $$$$$$/|  $$$$$$/
+ \_______/ \_______/ \____  $$       \______/  \______/ 
+                     /$$  | $$                          
+                    |  $$$$$$/                          
+                     \______/     
+-->
+```
+2023 Jan 04, Wednesday
+- Working on back-end planning, make ERD or schema design, API design. I supposed to make this earlier.
+- Fixing some part on notion
+- add some information on power point presentation.
